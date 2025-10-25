@@ -238,12 +238,5 @@ int main(int argc, char *argv[]) {
 	if(RX_Gain) { RX_Gain /= 100; }
 	fprintf (stdout, "RX-Gain: %d\n", RX_Gain);
 
-	/* Get current VFO QRG from pihpsdr*/
-	n = write(sockfd, "ZZFA;", 5);
-	n = read(sockfd, buffer, 50);
-
-	VFO = atoi(&buffer[4]);
-	fprintf (stdout, "VFO A QRG: %d\n", VFO) ;
-   
-    while(1);
+	while(1);
 }
