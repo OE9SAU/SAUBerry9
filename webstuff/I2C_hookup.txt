@@ -1,0 +1,53 @@
+TCA9555/PCA9555A Module IIC/I2C GPIO Expansion Board 16 Digital inputs and outputs  $10.99
+2PCS Type-C USB Nano 3.0 ATmega328P CH340 5V 16MHz Compatible with Arduino Nano 
+	CH340 USB Driver Nano V3.0 ATmega328  $8.99
+
+
+
+
+so I had to select ALEX filter in the RADIO selection of PIHPSDR
+wire from pins 18(scl) & 17(sda) to the 92555 
+then I moved the JUMPER over to H on A0 on the 92555 card to make address 0x21
+on the NANO I powered it from the Radioberry +5v BUT with a diode (fast recovery for less voltage drop) and GND 
+	for when you are programming it, it will not BACKFEED the power into the RPI (so anode of diode towards the RPI)
+I then wired the 92555 to the Nano 
+
+Before I wired everything, I watched the leds when I selected bands. I recorded what P0 and P1 were doing.
+the I2C card has labels but if you look on back they are called out much better than the front. the front has LEDS to let you see whats selected.
+then the LEDS are out the outputs are HIGH. so I observed:
+
+	P0		P1
+80	4		2
+40	3		1
+20	0		0
+15	1		6
+10	3		2
+--------------------------------------------------
+from the 92555 to the nano:
+Digital Inputs on Nano 
+6 to P0-0
+7 to P0-1
+8 to P0-3
+9 to P0-4
+10 to P1-0
+11 to P1-1
+12 to P1-2
+13 to P1-6
+
+the logic I used in the code is:
+ if D9  && D11 are TRUE then 80m (and on down the line) make "band = 80, 40, 20, 15, 10
+
+then I used the if else if to sort out what BAND equals and used that in a switch case
+	
+		
+
+
+I used the Nano inputs and code to decipher these to 4 outputs. 15m/10m on the filter board use the same section
+
+a smart person can add to the code and use the analog outs to run more relays
+
+I used a 1k to the base of the 2n2222 and grounded the emitters. the collectors go to the relay board.
+seems to work. 
+
+
+
