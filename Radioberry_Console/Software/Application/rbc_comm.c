@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include "button.h"
 
-#define DEBUG_PRINT 1
+#define DEBUG_PRINT 0
 
 
 /*------------------- Global Declarations -----------------*/
@@ -24,7 +24,7 @@ char vcp_read_buff[256], pipe_read_buff[256], cat_buffer[50], buffer[50];
 struct hostent *server;
 struct sockaddr_in serv_addr;
 int bcat_buff = 0;
-unsigned int Audio_Gain = 0, AGC_Gain = 0, RX_Gain = 0, VFO = 0;
+unsigned int Audio_Gain = 0, AGC_Gain = 0, RX_Gain = 0;
 /*------------------- Global Declarations -----------------*/
 
 void splash_screen (void)
@@ -36,6 +36,10 @@ void splash_screen (void)
 	printf("/**               V1.0                    **/\n");
 	printf("/**-------------------------------------- **/\n");
 	printf("/**          DE VU2DLE Dileep             **/\n");
+	printf("/*******************************************/\n");
+	printf("/**           V2.0   10/2025              **/\n");
+	printf("/**-------------------------------------- **/\n");
+	printf("/**             de OE9SAU                 **/\n");
 	printf("/*******************************************/\n");
 }
 
@@ -237,13 +241,6 @@ int main(int argc, char *argv[]) {
 	RX_Gain = atoi(&buffer[2]);
 	if(RX_Gain) { RX_Gain /= 100; }
 	fprintf (stdout, "RX-Gain: %d\n", RX_Gain);
-
-	/* Get current VFO QRG from pihpsdr*/
-	n = write(sockfd, "ZZFA;", 5);
-	n = read(sockfd, buffer, 50);
-
-	VFO = atoi(&buffer[4]);
-	fprintf (stdout, "VFO A QRG: %d\n", VFO) ;
    
     while(1);
 }
