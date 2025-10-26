@@ -37,10 +37,6 @@ void splash_screen (void)
 	printf("/**-------------------------------------- **/\n");
 	printf("/**          DE VU2DLE Dileep             **/\n");
 	printf("/*******************************************/\n");
-	printf("/**           V2.0   10/2025              **/\n");
-	printf("/**-------------------------------------- **/\n");
-	printf("/**             de OE9SAU                 **/\n");
-	printf("/*******************************************/\n");
 }
 
 
@@ -243,5 +239,4 @@ int main(int argc, char *argv[]) {
 	fprintf (stdout, "RX-Gain: %d\n", RX_Gain);
    
     while(1);
-
 }

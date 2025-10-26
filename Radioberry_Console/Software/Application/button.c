@@ -1,5 +1,7 @@
-//OE9SAU v2.0
-//RadioBerry_Console_v2.1.uf2 working with this code add KM17 and KM18 from ENC5 and ENBC4
+/*Code mods from OE9SAU 10/2025
+v2.0: 
+Variablen angepasst, push_button_vfoabswap_handler angepasst, push_button_filter_handler KM11, KM15 getasucht
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,9 +21,10 @@
 
 
 char na_buff[10], nb_buff[10];
-int vfo_mode, filter, vfo_step, snb, anf, locked, enc5_bt, enc4_bt;
+int vfo_mode, filter, vfo_step, snb, anf, locked;
 extern int n, sockfd; 
 extern char buffer[256];
+
 
 void push_button_LOCK_handler (char *key_received)
 {
@@ -167,7 +170,7 @@ void push_button_filter_handler (char *key_received)
 	n = read(sockfd, buffer, 50);
 	filter = atoi(&buffer[4]);
 	
-	if(!strcmp(key_received, "KM11")) {
+	if(!strcmp(key_received, "KM15")) {
 		if(filter != 11) {
 			filter ++;
 			printf("buffer: %s\n", buffer);
@@ -176,7 +179,7 @@ void push_button_filter_handler (char *key_received)
 		}
 	}
 
-	if(!strcmp(key_received, "KM15")) {
+	if(!strcmp(key_received, "KM11")) {
 		if(filter) {
 			filter --;
 			printf("buffer: %s\n", buffer);			
@@ -233,25 +236,6 @@ void push_button_mode_handler (char *key_received)
 
 }
 
-void push_ENC_button_handler(char *key_received)
-{
-	if(!strcmp(key_received, "KM17")) {
-		memset(buffer, 0, sizeof(buffer));
-		n = write(sockfd, "ZZFA;", 5);
-		n = read(sockfd, buffer, 50);
-		enc5_bt = atoi(&buffer[4]);
-		printf("VFO A: %s %d\n",buffer, enc5_bt);
-	}
-
-	if(!strcmp(key_received, "KM18")) {
-		memset(buffer, 0, sizeof(buffer));
-		n = write(sockfd, "ZZFB;", 5);
-		n = read(sockfd, buffer, 50);
-		enc4_bt = atoi(&buffer[4]);
-		printf("VFO B: %s %d\n",buffer, enc4_bt);
-	}
-}
-
 void push_button_handler (char *key_received)
 {
 	//printf ("push_button_handler: %s\n", key_received);
@@ -299,10 +283,4 @@ void push_button_handler (char *key_received)
 	else if(!strcmp(key_received, "KM13")) {
 		push_button_LOCK_handler(key_received);
 	}
-	
-	else if((!strcmp(key_received, "KM17")) || (!strcmp(key_received, "KM18"))) {
-		push_ENC_button_handler(key_received);
-	}
-	
 }
-
