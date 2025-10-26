@@ -1,3 +1,8 @@
+/*Code mods from OE9SAU 10/2025
+v2.0: 
+drehrichtung der encoder getauscht
+*/
+
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,7 +19,7 @@
 #include <unistd.h>
 #include "button.h"
 
-#define DEBUG_PRINT 0
+#define DEBUG_PRINT 1
 
 
 /*------------------- Global Declarations -----------------*/
@@ -36,6 +41,9 @@ void splash_screen (void)
 	printf("/**               V1.0                    **/\n");
 	printf("/**-------------------------------------- **/\n");
 	printf("/**          DE VU2DLE Dileep             **/\n");
+	printf("/*******************************************/\n");
+	printf("/**           v2. by OE9SAU               **/\n");
+	printf("/**       done some CAT code mods         **/\n");
 	printf("/*******************************************/\n");
 }
 
@@ -83,42 +91,42 @@ void* pihpsdr_cat_interface(void* arg)
 
 		/*-------------------- [ AF Gain Control] -----------------------*/
 		else if (!strcmp(pipe_read_buff, "EBLE")) {
-			if(Audio_Gain) Audio_Gain--;
+			if(Audio_Gain) Audio_Gain++;
 			sprintf(cat_buffer, "ZZAG%03d;",Audio_Gain);
 			bcat_buff = 1;
 		}
 		else if (!strcmp(pipe_read_buff, "EBRI")) {
-			if(Audio_Gain < 100) Audio_Gain++;
+			if(Audio_Gain < 100) Audio_Gain--;
 			sprintf(cat_buffer, "ZZAG%03d;",Audio_Gain);
 			bcat_buff = 1;
 		}
 
 		/*-------------------- [ AGC Gain Control] -----------------------*/
 		else if (!strcmp(pipe_read_buff, "ECLE")) {
-			if(AGC_Gain) AGC_Gain--;
+			if(AGC_Gain) AGC_Gain++;
 			sprintf(cat_buffer, "ZZAR%03d;", (AGC_Gain - 20));
 			bcat_buff = 1;
 		}
 		else if (!strcmp(pipe_read_buff, "ECRI")) {
-			if(AGC_Gain < 140) AGC_Gain++;
+			if(AGC_Gain < 140) AGC_Gain--;
 			sprintf(cat_buffer, "ZZAR%03d;",(AGC_Gain - 20));
 			bcat_buff = 1;
 		}
 
 		/*-------------------- [ RX Gain Control] -----------------------*/
 		else if (!strcmp(pipe_read_buff, "EDLE")) {
-			if(RX_Gain) RX_Gain--;
+			if(RX_Gain) RX_Gain++;
 			sprintf(cat_buffer, "RA%02d;", RX_Gain);
 			bcat_buff = 1;
 		}
 		else if (!strcmp(pipe_read_buff, "EDRI")) {
-			if(RX_Gain < 100) RX_Gain++;
+			if(RX_Gain < 100) RX_Gain--;
 			sprintf(cat_buffer, "RA%02d;", RX_Gain);
 			bcat_buff = 1;
 		}
 		/*----------------------- [ RIT +/- ]----------------------------*/
-		else if (!strcmp(pipe_read_buff, "EERI")) {strcpy(cat_buffer,"ZZRU;"); bcat_buff = 1;}
-		else if (!strcmp(pipe_read_buff, "EELE")) {strcpy(cat_buffer,"ZZRD;"); bcat_buff = 1;}
+		else if (!strcmp(pipe_read_buff, "EERI")) {strcpy(cat_buffer,"ZZRD;"); bcat_buff = 1;}
+		else if (!strcmp(pipe_read_buff, "EELE")) {strcpy(cat_buffer,"ZZRU;"); bcat_buff = 1;}
 
 		/*------------------- [ push switch handler ]---------------------*/
 		else if (pipe_read_buff[0] == 'K') {
@@ -224,19 +232,18 @@ int main(int argc, char *argv[]) {
 	fprintf (stdout, "Audio_Gain: %d\n", Audio_Gain) ;
 
 	/* Get current AGC Gain from pihpsdr*/
-	n = write(sockfd, "ZZAR;", 5);
+	n = write(sockfd, "ZZVB;", 5);
 	n = read(sockfd, buffer, 50);
 
 	AGC_Gain = (atoi(&buffer[4])) + 20;
-	fprintf (stdout, "AGC_Gain: %d\n", AGC_Gain) ;
+	fprintf (stdout, "RX Gain: %d\n", AGC_Gain) ;
 
 	/* Get current RX-Gain Attenuator from pihpsdr*/
-	n = write(sockfd, "RA;", 3);
+	n = write(sockfd, "ZZAR;", 5);
 	n = read(sockfd, buffer, 50);
 
-	RX_Gain = atoi(&buffer[2]);
-	if(RX_Gain) { RX_Gain /= 100; }
-	fprintf (stdout, "RX-Gain: %d\n", RX_Gain);
+	RX_Gain = atoi(&buffer[4]);
+	fprintf (stdout, "AGC_Gain: %d\n", RX_Gain);
    
     while(1);
 }
