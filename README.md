@@ -12,5 +12,5 @@ inside running
 
 -> Hope to get complete TRX-SDR running!
 
-![CaseFront](front_draft.png)
-![CaseFront](console.png)
+![CaseFront](/pics/front_draft.png)
+![CaseFront](/pics/console.png)
