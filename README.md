@@ -1,4 +1,4 @@
-# Based on the Radioberry projekt from pa3gsb i build up my own project called "SAUBerry9"
+# Based on the Radioberry projekt from pa3gsb i currently build up my own project called "SAUBerry9"
 
 inside running
 - RadioBerry on a RPI4
