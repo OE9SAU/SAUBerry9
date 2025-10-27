@@ -1,7 +1,7 @@
 # Based on the Radioberry projekt from pa3gsb i currently build up my own project called "SAUBerry9"
 
 inside running
-- RadioBerry on a RPI4
+- RadioBerry on a RPI4 with 7" touch
 - Radioberry_Console by VU2DLE
 - ATU-100 (in progress)
 - 50W or 100W PA (in progress)
