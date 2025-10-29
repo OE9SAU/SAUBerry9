@@ -5,7 +5,7 @@ inside running
 - Radioberry_Console by VU2DLE
 - ATU-100 (in progress)
 - 50W or 100W PA (in progress)
-- SDR_PreAmp_Filter by OE9SAU (in progress)
+- SDR_PreAmp_Filter by OE9SAU (https://github.com/OE9SAU/SDR_PreAmp_Filter)
 - LPF filterboard by ?? (in progress)
 - Radioberry-Filters-Interface by cinosh07 (in progress)
 - and some other stuff
