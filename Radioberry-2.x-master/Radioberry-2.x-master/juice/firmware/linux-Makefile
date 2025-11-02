@@ -1,0 +1,52 @@
+CC=gcc
+LINK=gcc
+
+OPTIONS=-g -O3 
+
+LIBS=-lrt -lm -lpthread -lftd2xx
+
+COMPILE=$(CC) $(OPTIONS) $(INCLUDES)
+
+PROGRAM=radioberry-juice
+
+SOURCES= \
+radioberry.c \
+gateware.c \
+stream.c \
+register.c \
+pa.c
+
+HEADERS= \
+radioberry.h \
+gateware.h \
+stream.h \
+register.h \
+sensors.h \
+pa.h
+
+OBJS= \
+radioberry.o \
+gateware.o \
+stream.o \
+register.o \
+pa.o
+
+all: prebuild $(PROGRAM) $(HEADERS) $(SOURCES) 
+
+prebuild:
+	rm -f version.o
+
+$(PROGRAM): $(OBJS) 
+	$(LINK) -o $(PROGRAM) $(OBJS) $(LIBS)
+
+.c.o:
+	$(COMPILE) -c -o $@ $<
+
+
+clean:
+	-rm -f *.o
+	-rm -f $(PROGRAM)
+	
+install: $(PROGRAM)
+	cp $(PROGRAM) /usr/local/bin
+

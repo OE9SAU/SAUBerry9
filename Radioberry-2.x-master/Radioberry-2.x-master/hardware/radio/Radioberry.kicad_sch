@@ -1,0 +1,829 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "5208a220-191d-4b44-ae2a-a4eb9065ca0f")
+	(paper "A4")
+	(title_block
+		(title "RadioBerry V2.0")
+		(date "2021-04-21")
+		(rev "beta5")
+		(company "AppMind")
+		(comment 1 "PA3GSB")
+	)
+	(lib_symbols
+		(symbol "hermeslite:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "POWER, PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "hermeslite:TEST_1P"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TEST_1P"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TEST_1P_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TEST_1P_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 160.02 123.825)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a8a13f5-a824-4f12-8048-069ab651ea5b")
+	)
+	(junction
+		(at 161.925 123.825)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "109143aa-b52c-487c-9048-d0108910f4e3")
+	)
+	(junction
+		(at 164.465 123.825)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c5ba11c-5db9-43f9-9052-44316af6c83b")
+	)
+	(wire
+		(pts
+			(xy 155.575 120.65) (xy 155.575 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18a62253-8fc1-4d8b-9057-91c0db21f096")
+	)
+	(wire
+		(pts
+			(xy 160.02 123.825) (xy 161.925 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "289505fb-c994-45fd-ba99-33c8c777bdb4")
+	)
+	(wire
+		(pts
+			(xy 164.465 123.825) (xy 164.465 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "473974c3-548a-4390-8c00-a5357e18973c")
+	)
+	(wire
+		(pts
+			(xy 164.465 123.825) (xy 168.91 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e735c4-fd04-4bbf-8afb-0e578a592d35")
+	)
+	(wire
+		(pts
+			(xy 155.575 123.825) (xy 160.02 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f5a53ef-edfe-4123-ae7c-626315505d18")
+	)
+	(wire
+		(pts
+			(xy 161.925 123.825) (xy 164.465 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af646c25-313a-4927-89cd-34effca005d5")
+	)
+	(wire
+		(pts
+			(xy 161.925 123.825) (xy 161.925 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba196dfb-841a-4a54-afec-a78feaa41196")
+	)
+	(wire
+		(pts
+			(xy 168.91 123.825) (xy 168.91 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e371e1b7-0d95-44f4-9989-12e6449cdcb7")
+	)
+	(wire
+		(pts
+			(xy 160.02 120.65) (xy 160.02 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdd95c1c-de56-4ec9-b776-cf4f272e9f46")
+	)
+	(symbol
+		(lib_id "hermeslite:TEST_1P")
+		(at 155.575 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000059cc9e7f")
+		(property "Reference" "MH1"
+			(at 155.575 113.792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNI"
+			(at 155.575 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "hermeslite:m3"
+			(at 160.655 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.655 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 155.575 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "DUMMY"
+			(at 155.575 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key" "NOBOM"
+			(at 155.575 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "526ee742-ca16-40ae-a662-82bce0a96405")
+		)
+		(instances
+			(project ""
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(reference "MH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hermeslite:TEST_1P")
+		(at 160.02 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000059cc9ef6")
+		(property "Reference" "MH2"
+			(at 160.02 113.792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNI"
+			(at 160.02 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "hermeslite:m3"
+			(at 165.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "DUMMY"
+			(at 160.02 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key" "NOBOM"
+			(at 160.02 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a5ba088-d41b-446e-becb-5140e616f3ef")
+		)
+		(instances
+			(project ""
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(reference "MH2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hermeslite:TEST_1P")
+		(at 164.465 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000059cc9f32")
+		(property "Reference" "MH3"
+			(at 164.465 113.792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNI"
+			(at 164.465 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "hermeslite:m3"
+			(at 169.545 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 169.545 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 164.465 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "DUMMY"
+			(at 164.465 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key" "NOBOM"
+			(at 164.465 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6dc3b5c-ab89-4f99-90e0-b72f88a50045")
+		)
+		(instances
+			(project ""
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(reference "MH3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hermeslite:TEST_1P")
+		(at 168.91 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000059cc9f63")
+		(property "Reference" "MH4"
+			(at 168.91 113.792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNI"
+			(at 168.91 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "hermeslite:m3"
+			(at 173.99 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Option" "DUMMY"
+			(at 168.91 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Key" "NOBOM"
+			(at 168.91 120.65 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e595783a-9bd7-4c3f-b795-faa9b0845d11")
+		)
+		(instances
+			(project ""
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(reference "MH4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hermeslite:GND")
+		(at 161.925 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000059cc9f91")
+		(property "Reference" "#PWR01"
+			(at 161.925 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.925 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.925 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.925 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.925 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd919573-b1c3-470a-9d4e-df2ae5c30dae")
+		)
+		(instances
+			(project ""
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 30.48)
+		(size 64.77 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000059bbc543")
+		(property "Sheetname" "Power"
+			(at 31.75 28.9048 0)
+			(effects
+				(font
+					(size 2.9972 2.9972)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Radioberry-PWR.kicad_sch"
+			(at 31.75 67.3155 0)
+			(effects
+				(font
+					(size 2.9972 2.9972)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Radioberry"
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 129.54 30.48)
+		(size 66.04 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000059bc3d9c")
+		(property "Sheetname" "GPIO"
+			(at 129.54 28.9048 0)
+			(effects
+				(font
+					(size 2.9972 2.9972)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Raspberry-GPIO.kicad_sch"
+			(at 129.54 67.3155 0)
+			(effects
+				(font
+					(size 2.9972 2.9972)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Radioberry"
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 101.6)
+		(size 66.04 38.1)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000059bc4a83")
+		(property "Sheetname" "Frontend"
+			(at 30.48 100.0248 0)
+			(effects
+				(font
+					(size 2.9972 2.9972)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Radioberry-Frontend.kicad_sch"
+			(at 30.48 140.9755 0)
+			(effects
+				(font
+					(size 2.9972 2.9972)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Radioberry"
+				(path "/5208a220-191d-4b44-ae2a-a4eb9065ca0f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
