@@ -21,6 +21,14 @@ drehrichtung der encoder getauscht
 
 #define DEBUG_PRINT 1
 
+#define AUDIO_GAIN_MIN 0
+#define AUDIO_GAIN_MAX 100
+
+#define AGC_GAIN_MIN 0
+#define AGC_GAIN_MAX 140
+
+#define RX_GAIN_MIN 0
+#define RX_GAIN_MAX 120
 
 /*------------------- Global Declarations -----------------*/
 int pipe_fd[2], serial_port, chcount = 0, nbytes, n;
@@ -29,7 +37,8 @@ char vcp_read_buff[256], pipe_read_buff[256], cat_buffer[50], buffer[50];
 struct hostent *server;
 struct sockaddr_in serv_addr;
 int bcat_buff = 0;
-unsigned int Audio_Gain = 0, AGC_Gain = 0, RX_Gain = 0;
+unsigned int Audio_Gain = 0, AGC_Gain = 0;
+int RX_Gain = 0;
 /*------------------- Global Declarations -----------------*/
 
 void splash_screen (void)
@@ -42,7 +51,7 @@ void splash_screen (void)
 	printf("/**-------------------------------------- **/\n");
 	printf("/**          DE VU2DLE Dileep             **/\n");
 	printf("/*******************************************/\n");
-	printf("/**           v2. by OE9SAU               **/\n");
+	printf("/**           v2.1 by OE9SAU              **/\n");
 	printf("/**       done some CAT code mods         **/\n");
 	printf("/*******************************************/\n");
 }
@@ -91,36 +100,39 @@ void* pihpsdr_cat_interface(void* arg)
 
 		/*-------------------- [ AF Gain Control] -----------------------*/
 		else if (!strcmp(pipe_read_buff, "EBLE")) {
-			if(Audio_Gain) Audio_Gain++;
-			sprintf(cat_buffer, "ZZAG%03d;",Audio_Gain);
+			if(Audio_Gain < AUDIO_GAIN_MAX) {
+				Audio_Gain++;  // nur erhöhen, wenn nicht am Maximum
+			}
+			sprintf(cat_buffer, "ZZAG%03d;", Audio_Gain);
 			bcat_buff = 1;
 		}
 		else if (!strcmp(pipe_read_buff, "EBRI")) {
-			if(Audio_Gain < 100) Audio_Gain--;
-			sprintf(cat_buffer, "ZZAG%03d;",Audio_Gain);
+			if(Audio_Gain > AUDIO_GAIN_MIN) {
+				Audio_Gain--;  // nur verringern, wenn nicht am Minimum
+			}
+			sprintf(cat_buffer, "ZZAG%03d;", Audio_Gain);
 			bcat_buff = 1;
 		}
 
 		/*-------------------- [ AGC Gain Control] -----------------------*/
-		else if (!strcmp(pipe_read_buff, "ECLE")) {
-			if(AGC_Gain) AGC_Gain++;
-			sprintf(cat_buffer, "ZZAR%03d;", (AGC_Gain - 20));
+		else if (!strcmp(pipe_read_buff, "ECLE")) { 
+			if (AGC_Gain < AGC_GAIN_MAX) AGC_Gain++;  // nur erhöhen bis Max
+			sprintf(cat_buffer, "ZZAR%03d;", AGC_Gain - 20); 
 			bcat_buff = 1;
 		}
-		else if (!strcmp(pipe_read_buff, "ECRI")) {
-			if(AGC_Gain < 140) AGC_Gain--;
-			sprintf(cat_buffer, "ZZAR%03d;",(AGC_Gain - 20));
-			bcat_buff = 1;
+		else if (!strcmp(pipe_read_buff, "ECRI")) { 
+			if (AGC_Gain > AGC_GAIN_MIN) AGC_Gain--;  // nur verringern bis Min
+			sprintf(cat_buffer, "ZZAR%03d;", AGC_Gain - 20); 
+			bcat_buff = 1; 
 		}
-
 		/*-------------------- [ RX Gain Control] -----------------------*/
 		else if (!strcmp(pipe_read_buff, "EDLE")) {
-			if(RX_Gain) RX_Gain++;
+			if (RX_Gain < RX_GAIN_MAX) RX_Gain++;
 			sprintf(cat_buffer, "RA%02d;", RX_Gain);
 			bcat_buff = 1;
 		}
 		else if (!strcmp(pipe_read_buff, "EDRI")) {
-			if(RX_Gain < 100) RX_Gain--;
+			if (RX_Gain > RX_GAIN_MIN) RX_Gain--;
 			sprintf(cat_buffer, "RA%02d;", RX_Gain);
 			bcat_buff = 1;
 		}
