@@ -9,6 +9,10 @@ Rama VU3RDD and Deepu VU3TLD for suggestions and design reviews from the beginni
 
 ## Code Modifications by OE9SAU (10/2025) – v2.1
 * This version contains several enhancements and bug fixes for the piHPSDR Controller for Radioberry. The focus was on improving CAT command handling, gain control logic, and ensuring proper encoder behavior.
+* Reversed encoder direction for all gain controls
+* Audio Gain: limited to 0–100
+* AGC Gain: limited to 0–140, CAT output offset by -20
+* RX Gain: changed to signed int, limited to -12–120. Negative values now supported
 
 ## Version V1.0 Features
 * VFO controlled by single optical encoder
