@@ -14,6 +14,13 @@ Rama VU3RDD and Deepu VU3TLD for suggestions and design reviews from the beginni
 * AGC Gain: limited to 0–140, CAT output offset by -20
 * RX Gain: changed to signed int, limited to -12–120. Negative values now supported
 
+ ```ruby
+cd /home/pi/
+mkdir rbc_main
+cd rbc_main
+git clone https://github.com/OE9SAU/SAUBerry9/tree/main/Radioberry_Console.git
+```
+
 ## Version V1.0 Features
 * VFO controlled by single optical encoder
 * AF, AGC, RX GAIN and RIT controlled by 4 mechanical encoders
