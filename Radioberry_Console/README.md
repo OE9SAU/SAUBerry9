@@ -7,7 +7,7 @@ Radioberry Controller is very simple standalone console for piHPSDR, which is de
 My sincere thanks to Johan for the RadioBerry SDR project, John Melton for piHPSDR.
 Rama VU3RDD and Deepu VU3TLD for suggestions and design reviews from the beginning of this project.
 
-## Code Modifications by OE9SAU (10/2025) – v2.0
+## Code Modifications by OE9SAU (10/2025) – v2.1
 * This version contains several enhancements and bug fixes for the piHPSDR Controller for Radioberry. The focus was on improving CAT command handling, gain control logic, and ensuring proper encoder behavior.
 
 ## Version V1.0 Features
