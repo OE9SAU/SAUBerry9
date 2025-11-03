@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "S6B_XH_SM4_TB")(type "KiCad")(uri "K:/Eigene Dateien/HAM/DIY/OmniWaveBerry/housing/lib/S6B_XH_SM4_TB")(options "")(descr ""))
+)

@@ -6,7 +6,7 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.15,
+        "board_outline_line_width": 0.05,
         "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -37,24 +37,23 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.3,
-          "height": 0.6,
-          "width": 0.6
+          "drill": 0.0,
+          "height": 1.4,
+          "width": 1.6
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
-        "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
@@ -120,7 +119,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -131,9 +130,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.4,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -181,14 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.35,
-        0.5,
-        0.75,
-        1.0,
-        1.25
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -459,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "vswr.kicad_pro",
+    "filename": "SAUBerry_back_v1.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -475,11 +467,11 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.2,
         "via_diameter": 0.6,
-        "via_drill": 0.4,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -488,83 +480,14 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Default",
-        "pattern": "+12V"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "+3V3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(C1-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(C2-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(C5-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(C6-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D1-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D2-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D3-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D3-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D4-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D4-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J1-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J2-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "SCL"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "SDA"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -651,7 +574,7 @@
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
-      "default_text_size": 60.0,
+      "default_text_size": 50.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -659,14 +582,14 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
-      "label_size_ratio": 0.25,
+      "label_size_ratio": 0.375,
       "operating_point_overlay_i_precision": 3,
       "operating_point_overlay_i_range": "~A",
       "operating_point_overlay_v_precision": 3,
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
-      "pin_symbol_size": 0.0,
-      "text_offset_ratio": 0.08
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
@@ -675,7 +598,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "release/beta1/",
+    "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -686,6 +609,11 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "eb38d550-8649-4149-9dee-2b5316a407af",
+      "Root"
+    ]
+  ],
   "text_variables": {}
 }

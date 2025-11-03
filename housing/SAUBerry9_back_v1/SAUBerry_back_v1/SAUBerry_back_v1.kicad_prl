@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 15,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -31,8 +31,11 @@
     "visible_items": [
       "vias",
       "footprint_text",
+      "footprint_anchors",
       "ratsnest",
       "grid",
+      "footprints_front",
+      "footprints_back",
       "footprint_values",
       "footprint_references",
       "tracks",
@@ -42,11 +45,12 @@
       "pads",
       "zones",
       "drc_warnings",
+      "drc_exclusions",
       "locked_item_shadows",
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0000000a_aaaa8aaf",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -55,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "vswr.kicad_prl",
+    "filename": "SAUBerry_back_v1.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
