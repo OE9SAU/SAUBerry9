@@ -3391,7 +3391,7 @@
 				)
 			)
 		)
-		(property "Value" "LED PWR RED"
+		(property "Value" "LED PWR PINK"
 			(at 141.986 85.09 0)
 			(effects
 				(font
