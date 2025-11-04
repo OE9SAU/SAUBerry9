@@ -1688,6 +1688,165 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Omron_B3FS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Omron_B3FS"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW*Omron*B3FS*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Omron_B3FS_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -1915,7 +2074,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "1 RX/TX (PTT gegen GND)\n2\n3\n4 PWR BTN\n5 PWR LED\n6 GND\n"
+	(text "1 5V\n2 RX/TX (PTT gegen GND)\n3 TUNE BTN\n4 PWR BTN\n5 PWR LED\n6 GND\n"
 		(exclude_from_sim no)
 		(at 192.786 65.024 0)
 		(effects
@@ -1939,6 +2098,12 @@
 		(uuid "99c3264c-7104-4a26-aa9f-9efd88e968ec")
 	)
 	(junction
+		(at 143.764 125.476)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4a26cb8-2e96-46a2-937b-9955559618e7")
+	)
+	(junction
 		(at 163.576 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1952,6 +2117,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 83.058) (xy 167.64 125.476)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "007626c2-9e13-4435-9185-4c9768492477")
+	)
+	(wire
+		(pts
 			(xy 111.506 44.704) (xy 106.68 44.704)
 		)
 		(stroke
@@ -1959,6 +2134,16 @@
 			(type default)
 		)
 		(uuid "05abe896-330d-4ba6-bb54-7e46c6ac5d2c")
+	)
+	(wire
+		(pts
+			(xy 149.606 125.476) (xy 143.764 125.476)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "068b5353-0257-4067-bda2-26ded616c3b4")
 	)
 	(wire
 		(pts
@@ -1989,6 +2174,16 @@
 			(type default)
 		)
 		(uuid "26eea963-d76f-467a-9ae3-0ebdb7c9cdde")
+	)
+	(wire
+		(pts
+			(xy 183.642 71.12) (xy 183.642 77.978)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29d226e3-5f29-4ac1-b392-d76a704088f1")
 	)
 	(wire
 		(pts
@@ -2032,6 +2227,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.764 125.476) (xy 143.764 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b4fc934-a079-4c05-b433-5af4904a1c10")
+	)
+	(wire
+		(pts
 			(xy 106.68 44.704) (xy 106.68 57.15)
 		)
 		(stroke
@@ -2039,6 +2244,16 @@
 			(type default)
 		)
 		(uuid "4b01632d-9665-4f53-8dbb-f2594f33c455")
+	)
+	(wire
+		(pts
+			(xy 183.642 85.598) (xy 165.354 85.598)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e8f02f5-ea3d-4f50-8116-a5e9efdff1eb")
 	)
 	(wire
 		(pts
@@ -2062,6 +2277,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.354 85.598) (xy 165.354 115.316)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a19066-b513-4dc4-b8f3-9ef7dd04522c")
+	)
+	(wire
+		(pts
 			(xy 176.53 90.678) (xy 176.53 94.996)
 		)
 		(stroke
@@ -2079,6 +2304,16 @@
 			(type default)
 		)
 		(uuid "68f1cf2f-4d8c-4926-82bc-4c01ad29d32d")
+	)
+	(wire
+		(pts
+			(xy 165.354 115.316) (xy 159.766 115.316)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b0833ca-efca-435e-850e-b5255820742c")
 	)
 	(wire
 		(pts
@@ -2102,7 +2337,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.276 77.978) (xy 183.642 77.978)
+			(xy 176.276 80.518) (xy 183.642 80.518)
 		)
 		(stroke
 			(width 0)
@@ -2119,6 +2354,16 @@
 			(type default)
 		)
 		(uuid "81627d3b-71c5-4e29-a539-317596eba85e")
+	)
+	(wire
+		(pts
+			(xy 143.764 115.316) (xy 143.764 125.476)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83abd80f-70dd-4290-8f29-f25a0ac566c5")
 	)
 	(wire
 		(pts
@@ -2139,6 +2384,16 @@
 			(type default)
 		)
 		(uuid "92835bb7-963f-44a7-abda-091d5ec3a9c0")
+	)
+	(wire
+		(pts
+			(xy 183.642 83.058) (xy 167.64 83.058)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e762b21-cce1-4596-9b83-1165da66a3c4")
 	)
 	(wire
 		(pts
@@ -2182,7 +2437,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.276 57.15) (xy 176.276 77.978)
+			(xy 176.276 57.15) (xy 176.276 80.518)
 		)
 		(stroke
 			(width 0)
@@ -2199,6 +2454,26 @@
 			(type default)
 		)
 		(uuid "e484537f-d5ad-4781-8f6e-ab0db2905280")
+	)
+	(wire
+		(pts
+			(xy 159.766 125.476) (xy 167.64 125.476)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea072916-e434-476c-bf1d-78d2611f9783")
+	)
+	(wire
+		(pts
+			(xy 149.606 115.316) (xy 143.764 115.316)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4bf1689-0625-4603-b58c-8515f8cb3dc4")
 	)
 	(wire
 		(pts
@@ -2499,6 +2774,74 @@
 			(project "OmniWaveBerry_front_v1"
 				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Omron_B3FS")
+		(at 154.686 115.316 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2181a58e-a22c-4f1e-8e78-b9aebb024112")
+		(property "Reference" "SW1"
+			(at 154.686 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Omron_B3FS"
+			(at 154.686 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 154.686 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf"
+			(at 154.686 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
+			(at 154.686 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9f057a1-93f3-47c7-9fad-eca76b82eb42")
+		)
+		(pin "2"
+			(uuid "30b70996-a99c-45a6-8941-39ad87e49b8e")
+		)
+		(instances
+			(project ""
+				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3107,6 +3450,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Omron_B3FS")
+		(at 154.686 125.476 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79ce120e-0231-4799-a25b-b7fab70e098d")
+		(property "Reference" "SW2"
+			(at 154.686 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Omron_B3FS"
+			(at 154.686 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 154.686 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf"
+			(at 154.686 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Omron B3FS 6x6mm single pole normally-open tactile switch"
+			(at 154.686 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cf53677-041b-4601-afd8-a5c94960e7a9")
+		)
+		(pin "2"
+			(uuid "329b46f3-d1cb-4a76-846f-3a8d7b47097e")
+		)
+		(instances
+			(project "SAUBerry_front_v1"
+				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 163.576 64.516 0)
 		(unit 1)
@@ -3171,6 +3582,138 @@
 			(project ""
 				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.764 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90c20bb4-c149-419d-b432-0269ad63239b")
+		(property "Reference" "#PWR09"
+			(at 143.764 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.764 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.764 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.764 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.764 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff198d57-e846-42df-9512-7ea623843436")
+		)
+		(instances
+			(project "SAUBerry_front_v1"
+				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 183.642 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99dfcf3e-4462-42fb-b2ed-3c9a6bef0379")
+		(property "Reference" "#PWR08"
+			(at 183.642 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 183.642 66.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 183.642 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 183.642 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 183.642 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "caa28986-18e6-45fe-913f-8ddee1d648f9")
+		)
+		(instances
+			(project "SAUBerry_front_v1"
+				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
