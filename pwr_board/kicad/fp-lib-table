@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AOD403")(type "KiCad")(uri "${KIPRJMOD}/lib/AOD403")(options "")(descr ""))
+)

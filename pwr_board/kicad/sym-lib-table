@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AOD403")(type "KiCad")(uri "${KIPRJMOD}/lib/AOD403/AOD403.kicad_sym")(options "")(descr ""))
+)
