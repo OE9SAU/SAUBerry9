@@ -500,9 +500,9 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber/",
       "pos_files": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "pwr_board.dsn",
       "step": "",
       "svg": "",
       "vrml": ""

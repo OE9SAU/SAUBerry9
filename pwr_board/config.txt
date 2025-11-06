@@ -1,0 +1,5 @@
+sudo nano /boot/config.txt
+Adding in this line at the end: 
+
+dtoverlay=gpio-poweroff,gpiopin=21
+
