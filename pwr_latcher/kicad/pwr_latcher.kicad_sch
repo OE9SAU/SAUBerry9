@@ -2361,7 +2361,7 @@
 		)
 		(uuid "03cdfb8e-af40-4bb9-be5e-2cda6907ddc5")
 	)
-	(text "2 5V OUT\n1 GND"
+	(text "1 5V OUT\n2 GND"
 		(exclude_from_sim no)
 		(at 236.22 92.71 0)
 		(effects
@@ -2685,7 +2685,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 92.71) (xy 80.01 92.71)
+			(xy 45.72 92.202) (xy 80.01 92.202)
 		)
 		(stroke
 			(width 0)
@@ -3025,7 +3025,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 96.52) (xy 80.01 92.71)
+			(xy 80.01 96.52) (xy 80.01 92.202)
 		)
 		(stroke
 			(width 0)
@@ -3087,7 +3087,7 @@
 	)
 	(global_label "STATUS"
 		(shape input)
-		(at 59.69 92.71 180)
+		(at 45.72 92.202 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3097,7 +3097,7 @@
 		)
 		(uuid "da5384bc-7bbd-42f0-af80-e30db45c565e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.9315 92.71 0)
+			(at 35.9615 92.202 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4082,6 +4082,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 224.79 74.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7dadbd67-15cb-4333-87ad-99635da79b1a")
+		(property "Reference" "J4"
+			(at 225.298 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "5V OUT"
+			(at 226.06 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 224.79 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 224.79 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f06aa72-c2bb-4f98-9443-07f434c21ad3")
+		)
+		(pin "2"
+			(uuid "1513bdfd-a1c4-4afa-b8a3-06a524477865")
+		)
+		(instances
+			(project "pwr_board"
+				(path "/2522f892-2375-40b1-8400-45f2048b0a15"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 204.47 96.266 180)
 		(unit 1)
@@ -4624,16 +4694,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 224.79 74.93 180)
+		(at 224.79 91.44 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca339b15-1eea-4813-ac3a-b49648efc0ef")
-		(property "Reference" "J4"
-			(at 226.06 72.3899 0)
+		(uuid "bb82e546-761b-4d4e-be30-859d2819427c")
+		(property "Reference" "J2"
+			(at 225.298 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4641,17 +4711,18 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5V IN"
-			(at 226.06 74.9299 0)
+		(property "Value" "5V OUT"
+			(at 226.06 91.4401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
-			(at 224.79 74.93 0)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 224.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4660,7 +4731,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.79 74.93 0)
+			(at 224.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4669,7 +4740,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 224.79 74.93 0)
+			(at 224.79 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4678,15 +4749,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5de869d3-56cc-46c8-ac19-66084f6176c0")
+			(uuid "a15f6e66-753b-4025-a057-d9dedaa10d37")
 		)
 		(pin "2"
-			(uuid "446cc98e-3463-4f03-933e-296fb939f341")
+			(uuid "0baf50b4-a2f6-4301-ac55-1bd1ac27f6ab")
 		)
 		(instances
-			(project "pwr_board"
+			(project ""
 				(path "/2522f892-2375-40b1-8400-45f2048b0a15"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5449,76 +5520,6 @@
 			(project "pwr_board"
 				(path "/2522f892-2375-40b1-8400-45f2048b0a15"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 224.79 93.98 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9fbf0ec-8403-4fb2-9a5f-c03c52f9dac9")
-		(property "Reference" "J2"
-			(at 226.06 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "5V OUT"
-			(at 226.06 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
-			(at 224.79 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 224.79 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 224.79 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e93f0ab-491a-42cd-a34c-8f0b20962eb4")
-		)
-		(pin "2"
-			(uuid "505e089a-f382-436e-a2a5-1a3b74ae4b4d")
-		)
-		(instances
-			(project ""
-				(path "/2522f892-2375-40b1-8400-45f2048b0a15"
-					(reference "J2")
 					(unit 1)
 				)
 			)
