@@ -6077,8 +6077,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "+ -"
-		(at 170.925 80.79 0)
+	(gr_text "+  -"
+		(at 170.73 80.79 0)
 		(layer "F.SilkS")
 		(uuid "88c3654e-4819-4ed2-91fb-038d516b99c1")
 		(effects
@@ -6102,8 +6102,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "+ -"
-		(at 165.5508 79.78 180)
+	(gr_text "+"
+		(at 165.7 79.78 180)
 		(layer "F.SilkS")
 		(uuid "f2e8d2cd-8368-41bc-9aa1-ff4e055e286f")
 		(effects
