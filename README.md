@@ -2,6 +2,7 @@
 
 inside running
 - RadioBerry on a RPI4 with 7" touch
+- Power Latcher by OE9SAU (single pushbutton to power On and Off the SAUBerry9)
 - Radioberry_Console by VU2DLE
 - ATU-100 (in progress)
 - 50W or 100W PA (in progress)
