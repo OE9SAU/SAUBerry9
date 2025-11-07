@@ -1,9 +1,8 @@
 
-v2 by OE9SAU
-This is a fork of the nice VSWR PCB from
-I add the temp. sensor and .....
+# v2 fork by OE9SAU
+add the temp. sensor and .....
 
-==============================================
+
 VSWR - Module
 ==============================================
 
