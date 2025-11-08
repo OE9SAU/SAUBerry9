@@ -3,6 +3,7 @@
 inside running
 - RadioBerry on a RPI4 with 7" touch
 - Power Latcher by OE9SAU (single pushbutton to power On and Off the SAUBerry9)
+- vswr temp bridge by OE9SAU (fork of the nice vswr master by pa3gsb) add the tempsensor to the board
 - Radioberry_Console by VU2DLE
 - ATU-100 (in progress)
 - 50W or 100W PA (in progress)

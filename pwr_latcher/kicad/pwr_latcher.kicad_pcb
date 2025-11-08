@@ -6000,8 +6000,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "STAT|GND|IN"
-		(at 148.1 75.6664 0)
+	(gr_text "STAT | UNL"
+		(at 149.3 75.6664 0)
 		(layer "F.SilkS")
 		(uuid "245a040a-2b7d-4e83-aa03-95d39f3e8d90")
 		(effects
@@ -6091,7 +6091,7 @@
 		)
 	)
 	(gr_text "5V OUT"
-		(at 177.32 88.08 90)
+		(at 177.32 88.8 90)
 		(layer "F.SilkS")
 		(uuid "a7652632-f27e-40b3-8026-7f32de537f72")
 		(effects
