@@ -15909,117 +15909,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "hermeslite:+VPA"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+VPA"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 0.9906 0.9906)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+VPA_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+VPA_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(hide yes)
-					(name "+VPA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "hermeslite:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -16579,7 +16468,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+5V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -16600,7 +16489,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -16626,7 +16515,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -16644,7 +16533,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -16682,7 +16571,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -19317,7 +19206,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+5V"
 		(shape input)
 		(at 206.502 95.758 0)
 		(effects
@@ -19457,7 +19346,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+5V"
 		(shape input)
 		(at 198.882 77.978 90)
 		(effects
@@ -19497,7 +19386,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+5V"
 		(shape output)
 		(at 53.848 169.164 180)
 		(effects
@@ -23461,7 +23350,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "LD1117S33"
+		(property "Value" "NCP 1117 ST50T3G"
 			(at 97.028 165.354 0)
 			(effects
 				(font
@@ -23509,69 +23398,6 @@
 			(project ""
 				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
 					(reference "IC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "hermeslite:+VPA")
-		(at 249.428 70.358 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fcc84e1")
-		(property "Reference" "#PWR025"
-			(at 249.428 74.168 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+VPA"
-			(at 250.063 66.548 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 249.428 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 249.428 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 249.428 70.358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ee1b5f8-72a3-4e6c-b140-b09d3d0363b8")
-		)
-		(instances
-			(project "SAUBerry9_VSWR_Bridge"
-				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -24893,69 +24719,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 267.208 39.878 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fdc13ee")
-		(property "Reference" "#PWR028"
-			(at 267.208 43.688 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 267.208 36.068 0)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.208 39.878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.208 39.878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 267.208 39.878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b4514a78-b122-458c-b06e-53225c5f7273")
-		)
-		(instances
-			(project "SAUBerry9_VSWR_Bridge"
-				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "hermeslite:C_Small")
 		(at 267.208 47.498 0)
 		(mirror y)
@@ -25480,6 +25243,136 @@
 			(project ""
 				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 249.428 70.358 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7a20594-482c-4b91-9e59-850c1bcb283f")
+		(property "Reference" "#PWR025"
+			(at 249.428 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 249.428 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 249.428 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 249.428 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 249.428 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd2fa581-b85b-480d-a46f-cbbe98bbf214")
+		)
+		(instances
+			(project "vswr_extension_bridge"
+				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 267.208 39.878 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6111d2d-669e-49a9-ae3b-954f96c67d6d")
+		(property "Reference" "#PWR028"
+			(at 267.208 43.688 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 267.208 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.208 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.208 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 267.208 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99c80aca-e4b7-409d-abed-c0fe10a07ef0")
+		)
+		(instances
+			(project ""
+				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)

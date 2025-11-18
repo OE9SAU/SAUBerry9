@@ -1286,22 +1286,20 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 8.62 0)
+			(property "Reference" "U1"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "SN74AHC1G04DBVR"
-				(at -5.08 -10.16 0)
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "SN74AHC1G04DBVR:SOT95P280X145-5N"
@@ -1631,24 +1629,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 10.16 5.08 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin output line
 					(at 10.16 0 180)
 					(length 5.08)
@@ -1678,6 +1658,26 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SN74AHC1G04DBVR_1_0"
+				(pin no_connect line
+					(at 10.16 5.08 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1_NC"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2111,7 +2111,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 85.598) (xy 167.64 128.524)
+			(xy 167.894 85.598) (xy 167.894 125.476)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +2141,7 @@
 	)
 	(wire
 		(pts
-			(xy 183.642 85.598) (xy 167.64 85.598)
+			(xy 183.642 85.598) (xy 167.894 85.598)
 		)
 		(stroke
 			(width 0)
@@ -2261,7 +2261,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.386 125.476) (xy 159.766 125.476)
+			(xy 159.766 125.476) (xy 167.894 125.476)
 		)
 		(stroke
 			(width 0)
@@ -2318,16 +2318,6 @@
 			(type default)
 		)
 		(uuid "68f1cf2f-4d8c-4926-82bc-4c01ad29d32d")
-	)
-	(wire
-		(pts
-			(xy 167.386 128.524) (xy 167.386 125.476)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "790372d7-d069-4d66-8ba5-06781ce3c479")
 	)
 	(wire
 		(pts
@@ -2468,16 +2458,6 @@
 			(type default)
 		)
 		(uuid "e484537f-d5ad-4781-8f6e-ab0db2905280")
-	)
-	(wire
-		(pts
-			(xy 167.386 128.524) (xy 167.64 128.524)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea072916-e434-476c-bf1d-78d2611f9783")
 	)
 	(wire
 		(pts
@@ -3442,7 +3422,7 @@
 		(pin "4"
 			(uuid "8fa52462-f861-419e-ad48-c5d37995b922")
 		)
-		(pin "1"
+		(pin "1_NC"
 			(uuid "3e61e18a-c536-475b-b449-6b26be5765f9")
 		)
 		(pin "3"
