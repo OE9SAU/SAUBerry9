@@ -134,6 +134,8 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.4,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -564,7 +566,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "release/beta1/pcb",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -686,11 +688,6 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [
-    [
-      "c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c",
-      "Root"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {}
 }
