@@ -19398,7 +19398,7 @@
 		)
 	)
 	(global_label "CURIN"
-		(shape input)
+		(shape output)
 		(at 138.176 176.784 180)
 		(effects
 			(font
@@ -19518,17 +19518,17 @@
 		)
 	)
 	(global_label "CURIN"
-		(shape output)
-		(at 271.018 116.078 90)
+		(shape input)
+		(at 271.018 109.982 270)
 		(effects
 			(font
 				(size 0.9906 0.9906)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "c6effe00-229b-4dd8-850a-84e394be0b6a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 271.018 116.078 90)
+			(at 271.018 109.982 90)
 			(effects
 				(font
 					(size 1.27 1.27)
