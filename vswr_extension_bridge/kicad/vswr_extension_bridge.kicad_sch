@@ -987,6 +987,330 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "1N5711_SOT123:1N5711W-7-F"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CR"
+				(at 5.08 4.445 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "1N5711W-7-F"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "SOD123_DIO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "1N5711W-7-F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "1N5711W-7-F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOD123_DIO SOD123_DIO-M SOD123_DIO-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N5711W-7-F_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 3.4798 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.905) (xy 3.81 -1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.905) (xy 6.35 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 0) (xy 3.81 1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -1.905) (xy 6.35 1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "1N5711W-7-F_1_2"
+				(polyline
+					(pts
+						(xy -1.905 3.81) (xy 1.905 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 6.35) (xy -1.905 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 6.35) (xy 0 7.62)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.175) (xy 0 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 3.4798)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 6.35) (xy -1.905 6.35)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 3.81) (xy 0 6.35)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "CONN_01X04_1"
 			(pin_names
 				(offset 1.016)
@@ -5264,550 +5588,6 @@
 				)
 			)
 			(symbol "DIODESCH_4_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "K"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DIODESCH_5"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "DIODESCH"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field5" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D? S*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DIODESCH_5_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0.635) (xy 1.905 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 0.635 -1.27) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0.2032)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "DIODESCH_5_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "K"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DIODESCH_6"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "DIODESCH"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field5" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D? S*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DIODESCH_6_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0.635) (xy 1.905 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 0.635 -1.27) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0.2032)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "DIODESCH_6_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "K"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DIODESCH_7"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "DIODESCH"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field5" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D? S*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DIODESCH_7_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0.635) (xy 1.905 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 0.635 -1.27) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0.2032)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "DIODESCH_7_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "K"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "DIODESCH_8"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "DIODESCH"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field5" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D? S*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DIODESCH_8_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0.635) (xy 1.905 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 0.635 -1.27) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0.2032)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "DIODESCH_8_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
@@ -19804,7 +19584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 104.3432 178.054 0)
 			(effects
 				(font
@@ -19873,7 +19653,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 75.1332 179.324 0)
 			(effects
 				(font
@@ -19942,7 +19722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 70.0532 179.324 0)
 			(effects
 				(font
@@ -20078,7 +19858,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_2010_HandSoldering"
+		(property "Footprint" "Diode_SMD:D_2010_5025Metric"
 			(at 66.294 81.788 90)
 			(effects
 				(font
@@ -20145,7 +19925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 82.804 93.218 90)
 			(effects
 				(font
@@ -20212,7 +19992,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_2010_HandSoldering"
+		(property "Footprint" "Diode_SMD:D_2010_5025Metric"
 			(at 66.294 113.538 90)
 			(effects
 				(font
@@ -20279,7 +20059,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 82.804 103.378 90)
 			(effects
 				(font
@@ -20348,7 +20128,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 90.6272 97.028 0)
 			(effects
 				(font
@@ -20417,7 +20197,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 90.6272 107.188 0)
 			(effects
 				(font
@@ -20715,138 +20495,6 @@
 			(project ""
 				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "DIODESCH_7")
-		(lib_id "vswr-rescue:DIODESCH")
-		(at 75.692 89.408 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005a43c1b2")
-		(property "Reference" "D1"
-			(at 75.692 86.868 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "1N5711"
-			(at 75.692 91.948 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "HERMESLITE:1N5711WS"
-			(at 75.692 89.408 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 75.692 89.408 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 75.692 89.408 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "91e03d42-473a-4c7f-820d-f4c6015d7bcb")
-		)
-		(pin "1"
-			(uuid "94f6c446-bfce-4225-b327-1e3a128dbf48")
-		)
-		(instances
-			(project ""
-				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "DIODESCH_5")
-		(lib_id "vswr-rescue:DIODESCH")
-		(at 75.692 107.188 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005a43c223")
-		(property "Reference" "D2"
-			(at 75.692 104.648 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "1N5711"
-			(at 75.692 109.728 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "HERMESLITE:1N5711WS"
-			(at 75.692 107.188 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 75.692 107.188 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 75.692 107.188 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9041b604-d998-4824-b116-88466d033f21")
-		)
-		(pin "2"
-			(uuid "e5fce564-f2ef-4720-a37b-c21eb51d3f5f")
-		)
-		(instances
-			(project ""
-				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -21713,7 +21361,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 111.252 99.2632 0)
 			(effects
 				(font
@@ -21885,72 +21533,6 @@
 		)
 	)
 	(symbol
-		(lib_name "DIODESCH_8")
-		(lib_id "vswr-rescue:DIODESCH")
-		(at 109.982 128.778 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005a4410f5")
-		(property "Reference" "D3"
-			(at 109.982 131.318 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "1N5711"
-			(at 115.062 130.048 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "HERMESLITE:1N5711WS"
-			(at 109.982 128.778 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.982 128.778 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 109.982 128.778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1da3763a-e557-4112-a586-70082c7363e6")
-		)
-		(pin "2"
-			(uuid "c778da6e-277c-47e8-9537-8509ca02c72c")
-		)
-		(instances
-			(project ""
-				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "GND_35")
 		(lib_id "vswr-rescue:GND")
 		(at 108.712 121.158 0)
@@ -22106,7 +21688,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 194.564 86.868 90)
 			(effects
 				(font
@@ -22191,7 +21773,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 199.644 86.868 90)
 			(effects
 				(font
@@ -22276,7 +21858,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 104.14 132.588 90)
 			(effects
 				(font
@@ -22343,7 +21925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 100.584 62.738 90)
 			(effects
 				(font
@@ -22379,72 +21961,6 @@
 			(project ""
 				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "DIODESCH_6")
-		(lib_id "vswr-rescue:DIODESCH")
-		(at 111.252 67.818 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005a442676")
-		(property "Reference" "D4"
-			(at 113.792 69.088 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "1N5711"
-			(at 111.252 65.278 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "HERMESLITE:1N5711WS"
-			(at 111.252 67.818 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.252 67.818 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 111.252 67.818 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ce763232-ed34-49e1-93de-6269fc3e8468")
-		)
-		(pin "2"
-			(uuid "cf3821e4-d0a6-47d4-b2f7-d2ca8698eade")
-		)
-		(instances
-			(project ""
-				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -22606,7 +22122,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 130.302 85.09 90)
 			(effects
 				(font
@@ -22673,7 +22189,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 130.302 107.95 90)
 			(effects
 				(font
@@ -22740,7 +22256,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 134.874 91.948 90)
 			(effects
 				(font
@@ -22807,7 +22323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0805_HandSoldering"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 134.874 104.648 90)
 			(effects
 				(font
@@ -22876,7 +22392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 142.6972 95.758 0)
 			(effects
 				(font
@@ -22945,7 +22461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805_HandSoldering"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 142.6972 108.458 0)
 			(effects
 				(font
@@ -23884,7 +23400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-1206"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 257.683 69.723 90)
 			(effects
 				(font
@@ -24007,7 +23523,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 245.999 76.708 0)
 			(effects
 				(font
@@ -24016,7 +23532,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 246.253 74.676 0)
 			(effects
 				(font
@@ -24214,7 +23730,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 217.678 32.004 90)
 			(effects
 				(font
@@ -24280,7 +23796,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 205.994 38.354 90)
 			(effects
 				(font
@@ -24348,7 +23864,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 212.852 38.354 0)
 			(effects
 				(font
@@ -24478,7 +23994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 205.994 52.324 90)
 			(effects
 				(font
@@ -24554,7 +24070,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 212.852 52.324 0)
 			(effects
 				(font
@@ -24683,7 +24199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 217.297 47.879 0)
 			(effects
 				(font
@@ -24807,7 +24323,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 271.653 49.403 0)
 			(effects
 				(font
@@ -24816,7 +24332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "HERMESLITE:SMD-0603"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 267.208 47.498 0)
 			(effects
 				(font
@@ -24915,6 +24431,214 @@
 			(project "SAUBerry9_VSWR_Bridge"
 				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1N5711_SOT123:1N5711W-7-F")
+		(at 116.332 67.818 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06a6539c-0208-46ec-b575-5015c8b0ce93")
+		(property "Reference" "D4"
+			(at 111.252 60.706 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "1N5711W"
+			(at 110.998 64.262 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "SOD123_DIO"
+			(at 116.332 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "1N5711W-7-F"
+			(at 116.332 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.332 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf15d273-e5cd-42d1-a489-d953f0667d4a")
+		)
+		(pin "2"
+			(uuid "4ca7f892-ef77-4b2d-bba2-1595c240cbe9")
+		)
+		(instances
+			(project "vswr_extension_bridge"
+				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1N5711_SOT123:1N5711W-7-F")
+		(at 70.612 107.188 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fbeda8d-c335-4688-a91b-45777d0164d2")
+		(property "Reference" "D2"
+			(at 75.692 100.33 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "1N5711W"
+			(at 75.692 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "SOD123_DIO"
+			(at 70.612 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "1N5711W-7-F"
+			(at 70.612 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 70.612 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1dcf6d9e-a94e-422d-a3c8-4320f8b4dc6c")
+		)
+		(pin "2"
+			(uuid "d22328e7-db0d-4cce-91a6-2dd0b7605a88")
+		)
+		(instances
+			(project "vswr_extension_bridge"
+				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1N5711_SOT123:1N5711W-7-F")
+		(at 70.612 89.408 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2891e405-7ea2-4054-853c-6e44dd3328d3")
+		(property "Reference" "D1"
+			(at 75.692 82.804 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "1N5711W"
+			(at 75.438 85.852 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "SOD123_DIO"
+			(at 70.612 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "1N5711W-7-F"
+			(at 70.612 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 70.612 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "762acbc3-c3a9-46e9-9489-023bab871c7d")
+		)
+		(pin "2"
+			(uuid "02a9fbf5-f75f-4f82-86d5-253f073b4006")
+		)
+		(instances
+			(project ""
+				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -25123,6 +24847,75 @@
 			(project ""
 				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1N5711_SOT123:1N5711W-7-F")
+		(at 115.062 128.778 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68220ce7-8456-4c9d-ac42-1278fafd42bf")
+		(property "Reference" "D3"
+			(at 112.268 132.08 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "1N5711W"
+			(at 112.268 134.62 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "SOD123_DIO"
+			(at 115.062 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "1N5711W-7-F"
+			(at 115.062 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.062 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a1b400b-b222-4648-936d-2afc6fca33ac")
+		)
+		(pin "2"
+			(uuid "d9e67959-58a8-4a88-9107-5d8bde0263ad")
+		)
+		(instances
+			(project "vswr_extension_bridge"
+				(path "/c4b6ae34-1f30-4d01-a404-2e8e3d58ed1c"
+					(reference "D3")
 					(unit 1)
 				)
 			)

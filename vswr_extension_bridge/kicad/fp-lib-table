@@ -7,4 +7,5 @@
   (lib (name "mods")(type "KiCad")(uri "$(KIPRJMOD)/mods")(options "")(descr ""))
   (lib (name "S4B-PH-SM4-TB")(type "KiCad")(uri "${KIPRJMOD}/libs/S4B-PH-SM4-TB")(options "")(descr ""))
   (lib (name "S6B-PH-SM4")(type "KiCad")(uri "${KIPRJMOD}/libs/S6B-PH-SM4")(options "")(descr ""))
+  (lib (name "1N5711_SOT123")(type "KiCad")(uri "${KIPRJMOD}/libs/1N5711W_7_F/footprints.pretty")(options "")(descr ""))
 )
