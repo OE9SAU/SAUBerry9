@@ -3,3 +3,14 @@ Adding in this line at the end:
 
 dtoverlay=gpio-poweroff,gpiopin=21
 
+
+
+CHATGPT:
+
+# Taster → Shutdown einleiten (GPIO20 als Eingang)
+dtoverlay=gpio-shutdown,gpio_pin=20,active_low=1,gpio_pull=up
+
+# Poweroff-Signal → Un-Latch (GPIO21 als Ausgang, aktiv HIGH)
+dtoverlay=gpio-poweroff,gpiopin=21
+
+
