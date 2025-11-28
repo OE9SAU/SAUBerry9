@@ -14,3 +14,5 @@ dtoverlay=gpio-shutdown,gpio_pin=20,active_low=1,gpio_pull=up
 dtoverlay=gpio-poweroff,gpiopin=21
 
 
+
+
