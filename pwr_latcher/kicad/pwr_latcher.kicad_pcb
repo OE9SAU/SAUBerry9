@@ -6377,7 +6377,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "25,4"
+		(gr_text "25.4"
 			(at 192.15 86.3372 90)
 			(layer "Margin")
 			(uuid "df48504f-e038-467e-bc91-a1e2a6afe926")
