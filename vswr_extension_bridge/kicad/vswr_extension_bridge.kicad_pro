@@ -564,7 +564,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "release/beta1/pcb",
+      "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "vswr_extension_bridge.dsn",
       "step": "",
