@@ -1,0 +1,2 @@
+Biasstrom 75mA
+Biasspannung 2.45V
