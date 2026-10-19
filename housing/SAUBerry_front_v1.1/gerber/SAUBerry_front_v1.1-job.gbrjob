@@ -3,13 +3,13 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.4"
+      "Version": "9.0.7"
     },
-    "CreationDate": "2025-11-06T12:47:49+01:00"
+    "CreationDate": "2026-10-19T12:44:17+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "SAUBerry_front_v1",
+      "Name": "SAUBerry_front_v1.1",
       "GUID": "53415542-6572-4727-995f-66726f6e745f",
       "Revision": "rev?"
     },
@@ -34,47 +34,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "SAUBerry_front_v1-F_Cu.gbr",
+      "Path": "SAUBerry_front_v1.1-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SAUBerry_front_v1-B_Cu.gbr",
+      "Path": "SAUBerry_front_v1.1-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SAUBerry_front_v1-F_Paste.gbr",
+      "Path": "SAUBerry_front_v1.1-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SAUBerry_front_v1-B_Paste.gbr",
+      "Path": "SAUBerry_front_v1.1-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SAUBerry_front_v1-F_Silkscreen.gbr",
+      "Path": "SAUBerry_front_v1.1-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SAUBerry_front_v1-B_Silkscreen.gbr",
+      "Path": "SAUBerry_front_v1.1-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "SAUBerry_front_v1-F_Mask.gbr",
+      "Path": "SAUBerry_front_v1.1-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "SAUBerry_front_v1-B_Mask.gbr",
+      "Path": "SAUBerry_front_v1.1-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "SAUBerry_front_v1-Edge_Cuts.gbr",
+      "Path": "SAUBerry_front_v1.1-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
