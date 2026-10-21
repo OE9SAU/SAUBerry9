@@ -1242,7 +1242,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "1 PWR\n2 RX/TX\n3\n4\n5 PTT\n6 GND\n"
+	(text "1 PWR\n2 ANT 2\n3 ANT 1\n4 \n5 \n6 GND\n"
 		(exclude_from_sim no)
 		(at 173.99 49.784 0)
 		(effects
@@ -1252,15 +1252,57 @@
 		)
 		(uuid "a774c969-8348-413e-a5c2-2d4d2fb90c99")
 	)
+	(junction
+		(at 111.506 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4577e6bc-aef1-4726-b36b-6f5989ffb26d")
+	)
+	(junction
+		(at 111.506 65.278)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46c556c7-016b-4fc3-8a1c-78cdad86b0fa")
+	)
 	(wire
 		(pts
-			(xy 132.08 70.358) (xy 133.35 70.358)
+			(xy 164.846 67.818) (xy 147.32 67.818)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "073c0deb-643f-4056-9cad-a1812310932c")
+	)
+	(wire
+		(pts
+			(xy 132.08 65.278) (xy 133.35 65.278)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "173bd75f-4a4c-4bf0-9eb0-88dc808ef6b4")
+	)
+	(wire
+		(pts
+			(xy 147.32 67.818) (xy 147.32 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dd2d181-3c27-4df5-b52e-a276305ca91e")
+	)
+	(wire
+		(pts
+			(xy 132.08 76.2) (xy 133.35 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a3d3b85-1d23-4704-8c66-0bb09434119a")
 	)
 	(wire
 		(pts
@@ -1274,13 +1316,33 @@
 	)
 	(wire
 		(pts
-			(xy 111.506 70.358) (xy 124.46 70.358)
+			(xy 111.506 65.278) (xy 124.46 65.278)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "523eaf9b-fdad-4dbe-8f55-0a6c9cc2efaa")
+	)
+	(wire
+		(pts
+			(xy 132.08 41.91) (xy 133.35 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "533653a3-4f66-40b7-ae49-d7b5344fbaa0")
+	)
+	(wire
+		(pts
+			(xy 111.506 76.2) (xy 111.506 104.902)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5df5bbbd-133e-43d0-a344-b6b0ac7c1b85")
 	)
 	(wire
 		(pts
@@ -1294,13 +1356,23 @@
 	)
 	(wire
 		(pts
-			(xy 111.506 70.358) (xy 111.506 104.902)
+			(xy 111.506 41.91) (xy 111.506 65.278)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "68f1cf2f-4d8c-4926-82bc-4c01ad29d32d")
+	)
+	(wire
+		(pts
+			(xy 111.506 41.91) (xy 124.46 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e85639-b872-450c-b04d-0615f0d21ffa")
 	)
 	(wire
 		(pts
@@ -1311,6 +1383,36 @@
 			(type default)
 		)
 		(uuid "92835bb7-963f-44a7-abda-091d5ec3a9c0")
+	)
+	(wire
+		(pts
+			(xy 111.506 65.278) (xy 111.506 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4d281ff-b81b-4e70-b7ed-0118557c3142")
+	)
+	(wire
+		(pts
+			(xy 140.97 76.2) (xy 147.32 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be19227d-d551-4499-975c-afcfd80db3d5")
+	)
+	(wire
+		(pts
+			(xy 111.506 76.2) (xy 124.46 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ced8acc1-c9a8-41bf-9271-20f08bcc3b1d")
 	)
 	(wire
 		(pts
@@ -1334,7 +1436,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 70.358) (xy 164.846 70.358)
+			(xy 140.97 65.278) (xy 164.846 65.278)
 		)
 		(stroke
 			(width 0)
@@ -1344,16 +1446,16 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 128.27 48.26 0)
-		(mirror x)
+		(at 128.27 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "100aa81d-5a8d-40dd-855a-a3405f25e387")
-		(property "Reference" "D3"
-			(at 126.6825 55.118 0)
+		(fields_autoplaced yes)
+		(uuid "05333ac3-3180-435a-8e7b-92ad84cbc3ca")
+		(property "Reference" "D2"
+			(at 126.6825 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1361,7 +1463,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 126.6825 52.578 0)
+			(at 126.6825 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,7 +1471,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 128.27 48.26 0)
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1378,7 +1480,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 48.26 0)
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1387,7 +1489,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 128.27 48.26 0)
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1396,7 +1498,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 128.27 48.26 0)
+			(at 128.27 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1405,15 +1507,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "49110ff2-956a-49cf-9aeb-0393833a8eb9")
+			(uuid "775b1be4-0787-46da-b37e-cbf0b29aae70")
 		)
 		(pin "1"
-			(uuid "fd342a31-c3bc-4d29-9592-a5fe4d80ad40")
+			(uuid "2ea23853-5e0c-4b28-9315-2162ce9d01bf")
 		)
 		(instances
-			(project "OmniWaveBerry_front_v1"
+			(project "SAUBerry_back_v1"
 				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -1505,74 +1607,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 136.906 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "182bb8e4-0533-4dbc-bdf0-6ce0c883c813")
-		(property "Reference" "R3"
-			(at 136.906 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 136.906 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 136.906 50.038 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 136.906 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 136.906 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2cdc887d-f985-4fc9-8b96-8c387841348c")
-		)
-		(pin "1"
-			(uuid "5f64d848-d1b3-4af8-8cab-9b79161f465c")
-		)
-		(instances
-			(project "OmniWaveBerry_front_v1"
-				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 137.16 70.358 90)
+		(at 137.16 65.278 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1580,8 +1615,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "380c8259-12b1-4ed7-9a80-df3cd13d07e4")
-		(property "Reference" "R1"
-			(at 137.16 64.77 90)
+		(property "Reference" "R3"
+			(at 137.16 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1589,7 +1624,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 137.16 67.31 90)
+			(at 137.16 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1597,7 +1632,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 137.16 72.136 90)
+			(at 137.16 67.056 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1606,7 +1641,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 70.358 0)
+			(at 137.16 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1615,7 +1650,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 137.16 70.358 0)
+			(at 137.16 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1632,7 +1667,75 @@
 		(instances
 			(project ""
 				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
-					(reference "R1")
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ccdd8ae-4d1b-4194-a81e-ac38e5061758")
+		(property "Reference" "R2"
+			(at 137.16 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 137.16 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 137.16 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "700c6669-d166-4e07-b005-68b0e4a7073c")
+		)
+		(pin "1"
+			(uuid "5e2ba61a-469f-4355-bcea-1b89bf84cf3c")
+		)
+		(instances
+			(project "SAUBerry_back_v1"
+				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -1648,8 +1751,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "581be0e0-ebd7-4b1f-b435-528e6a1fc695")
-		(property "Reference" "R2"
-			(at 137.16 36.322 90)
+		(property "Reference" "R1"
+			(at 137.16 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1657,7 +1760,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 137.16 38.862 90)
+			(at 137.16 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1700,7 +1803,7 @@
 		(instances
 			(project "OmniWaveBerry_front_v1"
 				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1840,7 +1943,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 128.27 70.358 0)
+		(at 128.27 65.278 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1848,8 +1951,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d47b0fee-34f7-4ea6-af04-7e70e7f203e6")
-		(property "Reference" "D1"
-			(at 126.6825 63.5 0)
+		(property "Reference" "D3"
+			(at 126.6825 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1857,7 +1960,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 126.6825 66.04 0)
+			(at 126.6825 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1865,7 +1968,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 128.27 70.358 0)
+			(at 128.27 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1874,7 +1977,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 70.358 0)
+			(at 128.27 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1883,7 +1986,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 128.27 70.358 0)
+			(at 128.27 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1892,7 +1995,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 128.27 70.358 0)
+			(at 128.27 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1909,7 +2012,7 @@
 		(instances
 			(project ""
 				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -1925,8 +2028,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7435d22-aa34-4924-b1f7-e15bdeb62acf")
-		(property "Reference" "D2"
-			(at 126.6825 35.052 0)
+		(property "Reference" "D1"
+			(at 126.6825 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1934,7 +2037,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 126.6825 37.592 0)
+			(at 126.6825 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1986,7 +2089,7 @@
 		(instances
 			(project "OmniWaveBerry_front_v1"
 				(path "/eb38d550-8649-4149-9dee-2b5316a407af"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)

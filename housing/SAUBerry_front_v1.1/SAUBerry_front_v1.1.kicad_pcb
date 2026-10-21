@@ -10347,8 +10347,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "ANT 2\n"
-		(at 197.31 234.23 0)
+	(gr_text "ANT 1/2\n"
+		(at 195.5 234.23 0)
 		(layer "F.SilkS")
 		(uuid "3a2f9c1e-df39-45ce-860e-7b24eb66b3ac")
 		(effects
