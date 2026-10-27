@@ -2485,12 +2485,12 @@
 	(footprint "LOGO"
 		(layer "F.Cu")
 		(uuid "a23cd2a6-6ea0-414d-8f96-178498ff52ae")
-		(at 229.591 172.111)
+		(at 231.5 162.325)
 		(property "Reference" "G1"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "a3275441-39a6-4a29-baaf-da4513261ac3")
+			(uuid "e30b2195-e0eb-4377-aee4-6b76e3d494be")
 			(effects
 				(font
 					(size 1.5 1.5)
@@ -2502,7 +2502,7 @@
 			(at 0.75 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "97c39778-ec49-4e1d-ae61-71cb2d3c4fae")
+			(uuid "d8c63feb-141f-4c2e-99c9-88c52f4f35bc")
 			(effects
 				(font
 					(size 1.5 1.5)
@@ -2514,7 +2514,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "699b1b96-0d6e-442e-9d5a-63402b3be494")
+			(uuid "322491a6-f7e3-43f5-a044-66b809e9af28")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2526,7 +2526,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dee75f87-aabf-4218-bd88-af6952f3f38a")
+			(uuid "d91b9323-55e9-43e5-9a2e-0e6b6d8ea348")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5426,8 +5426,8 @@
 		(uuid "bcaaabb1-298a-4920-8be8-8352e7508546")
 	)
 	(gr_rect
-		(start 113.434 120.55)
-		(end 423.418 249.38)
+		(start 113.284 120.45)
+		(end 423.518 249.53)
 		(stroke
 			(width 1)
 			(type solid)
@@ -5970,19 +5970,6 @@
 		(layer "Edge.Cuts")
 		(uuid "fa9e9ec5-ea37-4ad7-8afb-753ce92bc795")
 	)
-	(gr_text "SAUBerry9\nby OE9SAU v1 10/2026\n"
-		(at 229.5 132 0)
-		(layer "F.SilkS")
-		(uuid "0dea1aa1-42c5-4daa-aa78-370d0f9a26cb")
-		(effects
-			(font
-				(size 2 2.5)
-				(thickness 0.45)
-				(bold yes)
-			)
-			(justify bottom)
-		)
-	)
 	(gr_text "2"
 		(at 350 242.5 0)
 		(layer "F.SilkS")
@@ -6033,6 +6020,72 @@
 				(bold yes)
 			)
 			(justify bottom mirror)
+		)
+	)
+	(table
+		(column_count 1)
+		(layer "F.SilkS")
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 1)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+		)
+		(column_widths 31.65)
+		(row_heights 4.8 4.8 4.8)
+		(cells
+			(table_cell "SAUBerry9 by OE9SAU\n"
+				(start 216.204 196.138)
+				(end 247.854 200.938)
+				(margins 1.0025 1.0025 1.0025 1.0025)
+				(span 1 1)
+				(layer "F.SilkS")
+				(uuid "d7ca22bb-be86-4640-99d6-0ce5f800c2ff")
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(table_cell "v1 10/2026"
+				(start 216.204 200.938)
+				(end 247.854 205.738)
+				(margins 1.0025 1.0025 1.0025 1.0025)
+				(span 1 1)
+				(layer "F.SilkS")
+				(uuid "c2431cf6-a26b-426c-a159-1f331b02aea1")
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(table_cell ""
+				(start 216.204 205.738)
+				(end 247.854 210.538)
+				(margins 1.0025 1.0025 1.0025 1.0025)
+				(span 1 1)
+				(layer "F.SilkS")
+				(uuid "cda69f95-7c12-43c9-9c44-5ebe2291bf44")
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
 		)
 	)
 	(segment
