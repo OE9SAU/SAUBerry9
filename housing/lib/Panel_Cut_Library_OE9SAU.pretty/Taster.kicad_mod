@@ -1,0 +1,132 @@
+(footprint "Taster"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "74adebfa-eafb-4808-9679-b91790490bda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Taster"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db225162-7b93-40b9-b6e6-14a48976e2fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc2b90bc-ffcb-403a-b066-c9d5bc262114")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f66978c2-644f-444f-ab3b-d7ba023a58f5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" "1=K 2=A"
+		(at 3.75 15.825 180)
+		(unlocked yes)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "c0b07c56-3617-4065-95fc-ae3144b9e367")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.8725 3.785)
+		(end 0.7075 5.315)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "3a74e28e-8e71-4ffe-937c-5bbc672db238")
+	)
+	(fp_circle
+		(center -0.0949 -0.025)
+		(end 1.8051 -0.025)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5e847bf6-6473-4f50-bb93-f30caa1745be")
+	)
+	(fp_rect
+		(start -0.7625 3.9)
+		(end 0.5875 5.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "3f03903c-1c3b-42a0-9e06-d78ec716c4b9")
+	)
+	(fp_circle
+		(center -0.0925 -0.03)
+		(end 1.7075 -0.03)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "fe07373e-1e04-48fc-8d84-2376bf1fd1db")
+	)
+	(fp_text user "REF"
+		(at -3 -4.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a5296d4b-2bbf-48cf-bff1-510b73b3460e")
+		(effects
+			(font
+				(size 1.8 1.8)
+				(thickness 0.45)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(embedded_fonts no)
+)
