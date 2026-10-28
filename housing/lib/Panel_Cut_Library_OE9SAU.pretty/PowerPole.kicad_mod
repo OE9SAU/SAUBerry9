@@ -1,0 +1,126 @@
+(footprint "PowerPole"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "02b53022-111a-494b-8179-57748ca2ccdb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PowerPole"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a33afc88-3383-4eaa-9c32-8cd52472df78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2582cb80-08c8-4107-98e1-c924b7b0867f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c5285c14-0786-4087-aa5f-7d77571f2053")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -18 -14)
+		(end 18 14)
+		(stroke
+			(width 0.7)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "3c887fb3-162b-42ea-82b5-fc8632c7ebfb")
+	)
+	(fp_rect
+		(start -10.75 -6.75)
+		(end 10.75 6.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "206e4ea6-4dc9-498b-b944-84549110e122")
+	)
+	(fp_circle
+		(center -12.5 -9)
+		(end -11 -9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "769eef58-1dbe-4ced-9fec-c2012c01ca9e")
+	)
+	(fp_circle
+		(center -12.5 9)
+		(end -11 9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "b299e712-44b9-460e-8ed1-e91fafe1aa34")
+	)
+	(fp_circle
+		(center 13.5 -8.7)
+		(end 15 -8.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "350adb7f-b555-4e05-91ba-0507664a8b02")
+	)
+	(fp_circle
+		(center 13.5 8.7)
+		(end 15 8.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "0e6134fb-74ba-445f-9819-d15f6effc509")
+	)
+	(embedded_fonts no)
+)

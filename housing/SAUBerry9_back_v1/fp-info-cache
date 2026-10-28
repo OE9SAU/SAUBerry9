@@ -1,4 +1,4 @@
-27244122311294607
+27245915498084408
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -93920,6 +93920,13 @@ N-Buchse_SMA_IN_LED
 0
 Panel_Cut_Library_OE9SAU
 N-Buchse_ohne_LED
+
+
+0
+0
+0
+Panel_Cut_Library_OE9SAU
+PowerPole
 
 
 0
