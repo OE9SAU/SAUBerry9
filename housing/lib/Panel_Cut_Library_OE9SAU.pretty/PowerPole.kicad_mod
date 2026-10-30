@@ -57,8 +57,8 @@
 	)
 	(attr smd)
 	(fp_rect
-		(start -18 -14)
-		(end 18 14)
+		(start -18 -14.3)
+		(end 19 14.4)
 		(stroke
 			(width 0.7)
 			(type solid)
@@ -101,8 +101,8 @@
 		(uuid "b299e712-44b9-460e-8ed1-e91fafe1aa34")
 	)
 	(fp_circle
-		(center 13.5 -8.7)
-		(end 15 -8.7)
+		(center 13.5 -9)
+		(end 15 -9)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -112,8 +112,8 @@
 		(uuid "350adb7f-b555-4e05-91ba-0507664a8b02")
 	)
 	(fp_circle
-		(center 13.5 8.7)
-		(end 15 8.7)
+		(center 13.5 9)
+		(end 15 9)
 		(stroke
 			(width 0.05)
 			(type solid)
