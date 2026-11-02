@@ -1,18 +1,13 @@
-sudo nano /boot/config.txt
+sudo nano /boot/firmware/config.txt
+
 Adding in this line at the end: 
 
-dtoverlay=gpio-poweroff,gpiopin=21
 
+# Taster → Shutdown (GPIO14, Pin 8, gegen GND)
+dtoverlay=gpio-shutdown,gpio_pin=14,active_low=1,gpio_pull=up
 
+# GPIO15 / Pin 10 beim Booten als Ausgang auf LOW
+gpio=15=op,dl
 
-CHATGPT:
-
-# Taster → Shutdown einleiten (GPIO20 als Eingang)
-dtoverlay=gpio-shutdown,gpio_pin=20,active_low=1,gpio_pull=up
-
-# Poweroff-Signal → Un-Latch (GPIO21 als Ausgang, aktiv HIGH)
-dtoverlay=gpio-poweroff,gpiopin=21
-
-
-
-
+# Poweroff-Signal → Un-Latch (GPIO15, Pin 10, aktiv HIGH)
+dtoverlay=gpio-poweroff,gpiopin=15

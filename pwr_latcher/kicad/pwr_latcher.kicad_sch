@@ -2372,9 +2372,9 @@
 		)
 		(uuid "c83fcda4-3b24-4c85-8244-bab712a36249")
 	)
-	(text "22uF / 160K = 3.5 sec\n22uF / 240K = 5 sec"
+	(text "3x 22uF ~ 1 Sek. nach \nShutdown Power Off\n"
 		(exclude_from_sim no)
-		(at 194.31 127 0)
+		(at 193.548 125.476 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4848,7 +4848,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7c8b895-d777-400f-9b5f-d0abed1b066f")
 		(property "Reference" "C1"
-			(at 181.864 118.3639 0)
+			(at 181.61 118.3639 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4856,8 +4856,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
-			(at 181.864 120.9039 0)
+		(property "Value" "3x 22uF"
+			(at 181.61 120.9039 0)
 			(effects
 				(font
 					(size 1.27 1.27)
