@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "208e45c3-b2b5-4e2b-9014-042009b46fb3")
 	(paper "A4")
 	(title_block
@@ -13,9 +13,13 @@
 	)
 	(lib_symbols
 		(symbol "Radioberry:V-REG_LD117AS33TR"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -84,18 +88,6 @@
 			(symbol "V-REG_LD117AS33TR_1_0"
 				(polyline
 					(pts
-						(xy -5.08 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -5.08 2.54) (xy -5.08 -5.08)
 					)
 					(stroke
@@ -108,7 +100,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -5.08) (xy 5.08 2.54)
+						(xy -5.08 -5.08) (xy 5.08 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -130,16 +122,28 @@
 						(type none)
 					)
 				)
-				(text "ADJ"
-					(at -0.2794 -3.7084 0)
+				(polyline
+					(pts
+						(xy 5.08 -5.08) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "IN"
+					(at -3.2766 -0.0254 0)
 					(effects
 						(font
 							(size 1.2192 1.2192)
 						)
 					)
 				)
-				(text "IN"
-					(at -3.2766 -0.0254 0)
+				(text "ADJ"
+					(at -0.2794 -3.7084 0)
 					(effects
 						(font
 							(size 1.2192 1.2192)
@@ -157,24 +161,6 @@
 			)
 			(symbol "V-REG_LD117AS33TR_1_1"
 				(pin input line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "ADJ"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
 					(name "IN"
@@ -185,6 +171,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "ADJ"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -211,6 +215,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:+3V3"
 			(power)
@@ -288,7 +293,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -300,7 +305,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -314,7 +319,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -331,6 +337,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:+VBIAS"
 			(power)
@@ -397,7 +404,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -409,7 +416,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -423,7 +430,8 @@
 			(symbol "+VBIAS_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+VBIAS"
 						(effects
 							(font
@@ -440,6 +448,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:+VPA"
 			(power)
@@ -506,7 +515,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -518,7 +527,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -532,7 +541,8 @@
 			(symbol "+VPA_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+VPA"
 						(effects
 							(font
@@ -549,10 +559,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:CONN_01X02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -619,8 +632,8 @@
 			)
 			(symbol "CONN_01X02_0_1"
 				(rectangle
-					(start -1.27 -1.143)
-					(end 0.254 -1.397)
+					(start -1.27 2.54)
+					(end 1.27 -2.54)
 					(stroke
 						(width 0)
 						(type solid)
@@ -641,8 +654,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.54)
-					(end 1.27 -2.54)
+					(start -1.27 -1.143)
+					(end 0.254 -1.397)
 					(stroke
 						(width 0)
 						(type solid)
@@ -690,11 +703,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -764,10 +782,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type solid)
 					)
 					(fill
@@ -776,10 +794,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type solid)
 					)
 					(fill
@@ -825,9 +843,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:FB"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 			)
@@ -928,6 +949,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:GND"
 			(power)
@@ -1007,7 +1029,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1024,6 +1047,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:LP2985"
 			(pin_names
@@ -1087,6 +1111,24 @@
 				)
 			)
 			(symbol "LP2985_1_1"
+				(pin input line
+					(at -5.08 2.54 0)
+					(length 5.08)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at -5.08 0 0)
 					(length 5.08)
@@ -1123,17 +1165,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 2.54 0)
+				(pin power_out line
+					(at 15.24 2.54 180)
 					(length 5.08)
-					(name "EN"
+					(name "Vout"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1159,30 +1201,17 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "Vout"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:L_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1251,32 +1280,8 @@
 			)
 			(symbol "L_Small_0_1"
 				(arc
-					(start 0 -2.032)
-					(mid 0.508 -1.524)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.508 -0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.508 0.508)
+					(start 0 2.032)
+					(mid 0.508 1.524)
 					(end 0 1.016)
 					(stroke
 						(width 0)
@@ -1288,8 +1293,32 @@
 				)
 				(arc
 					(start 0 1.016)
-					(mid 0.508 1.524)
-					(end 0 2.032)
+					(mid 0.508 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.508 -0.508)
+					(end 0 -1.016)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.016)
+					(mid 0.508 -1.524)
+					(end 0 -2.032)
 					(stroke
 						(width 0)
 						(type solid)
@@ -1337,9 +1366,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:MOSFET_P"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1404,18 +1436,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.81) (xy 0 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 0) (xy 1.27 0)
 					)
 					(stroke
@@ -1428,10 +1448,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -0.635) (xy 2.54 0)
+						(xy 0 -3.81) (xy 0 3.81)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type solid)
 					)
 					(fill
@@ -1464,7 +1484,19 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 0 -2.54)
+						(xy 1.27 -0.635) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1488,7 +1520,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 0 2.54)
+						(xy 2.54 -2.54) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -1519,24 +1551,6 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "D"
@@ -1554,10 +1568,31 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:Polyfuse"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1627,6 +1662,18 @@
 				)
 			)
 			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -0.762 2.54)
 					(end 0.762 -2.54)
@@ -1641,18 +1688,6 @@
 				(polyline
 					(pts
 						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -1701,9 +1736,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1822,6 +1860,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:ST1S10"
 			(pin_names
@@ -1885,17 +1924,17 @@
 				)
 			)
 			(symbol "ST1S10_1_1"
-				(pin input line
-					(at -13.97 3.81 0)
+				(pin power_in line
+					(at -13.97 8.89 0)
 					(length 5.08)
-					(name "Vina"
+					(name "Vinsw"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1922,16 +1961,16 @@
 					)
 				)
 				(pin input line
-					(at 11.43 3.81 180)
+					(at -13.97 3.81 0)
 					(length 5.08)
-					(name "Vfb"
+					(name "Vina"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1975,24 +2014,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -13.97 8.89 0)
-					(length 5.08)
-					(name "Vinsw"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_out line
 					(at 11.43 8.89 180)
 					(length 5.08)
@@ -2004,6 +2025,24 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 11.43 3.81 180)
+					(length 5.08)
+					(name "Vfb"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2048,11 +2087,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:TVSANTI"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2118,7 +2162,7 @@
 			(symbol "TVSANTI_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -0.635) (xy 0.635 -1.27)
+						(xy 0 0) (xy 0 0.635) (xy -0.635 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2130,7 +2174,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 0.635) (xy -0.635 1.27)
+						(xy 0 0) (xy 0 -0.635) (xy 0.635 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -2203,12 +2247,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2299,6 +2348,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -3928,7 +3978,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd35ac2")
-		(property "Reference" "IC101"
+		(property "Reference" "IC?"
 			(at 151.765 144.0434 0)
 			(effects
 				(font
@@ -3980,6 +4030,14 @@
 		(pin "3"
 			(uuid "d908bdfb-eee3-4d3e-b350-e1183acac901")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "IC?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -3990,7 +4048,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd367da")
-		(property "Reference" "C115"
+		(property "Reference" "C?"
 			(at 168.7068 153.7716 0)
 			(effects
 				(font
@@ -4041,6 +4099,14 @@
 		(pin "2"
 			(uuid "d82fe870-b48e-4b4a-8594-9055114059f5")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4051,7 +4117,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd37242")
-		(property "Reference" "C116"
+		(property "Reference" "C?"
 			(at 173.7868 153.7716 0)
 			(effects
 				(font
@@ -4102,6 +4168,14 @@
 		(pin "1"
 			(uuid "ec9ac54b-4dd8-4a3c-8081-7007c28356bf")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4112,7 +4186,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd3758c")
-		(property "Reference" "C117"
+		(property "Reference" "C?"
 			(at 178.8668 153.7716 0)
 			(effects
 				(font
@@ -4163,6 +4237,14 @@
 		(pin "2"
 			(uuid "1f1f02eb-97b2-4ba8-abb1-e409344889e0")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4173,7 +4255,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd3792a")
-		(property "Reference" "C118"
+		(property "Reference" "C?"
 			(at 183.9468 153.7716 0)
 			(effects
 				(font
@@ -4224,6 +4306,14 @@
 		(pin "1"
 			(uuid "07c43b39-7559-4c0e-a222-22cefeb3fd74")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4234,7 +4324,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd37bef")
-		(property "Reference" "C114"
+		(property "Reference" "C?"
 			(at 143.9418 153.7716 0)
 			(effects
 				(font
@@ -4284,6 +4374,14 @@
 		)
 		(pin "2"
 			(uuid "21a1c76d-d736-4f5f-a6ff-c544b37944c0")
+		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4360,7 +4458,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd6569c")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR?"
 			(at 191.135 154.305 0)
 			(effects
 				(font
@@ -4407,6 +4505,14 @@
 		(pin "1"
 			(uuid "b3d73f2c-c949-4cf5-b1d3-7a543837a5eb")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4417,7 +4523,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fd661b5")
-		(property "Reference" "C113"
+		(property "Reference" "C?"
 			(at 138.2268 153.7716 0)
 			(effects
 				(font
@@ -4468,6 +4574,14 @@
 		(pin "2"
 			(uuid "0c56c377-759a-46a3-a4d2-cd7ef03f8d1a")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4478,7 +4592,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fdb978b")
-		(property "Reference" "C120"
+		(property "Reference" "C?"
 			(at 92.075 66.04 0)
 			(effects
 				(font
@@ -4529,6 +4643,14 @@
 		(pin "1"
 			(uuid "7b172950-94db-4025-98e6-ecb207ad934e")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4539,7 +4661,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fdc154d")
-		(property "Reference" "C119"
+		(property "Reference" "C?"
 			(at 84.455 66.04 0)
 			(effects
 				(font
@@ -4590,6 +4712,14 @@
 		(pin "2"
 			(uuid "29ad0856-63c4-403e-9ce8-945013b5ebc3")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4600,7 +4730,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fdc1899")
-		(property "Reference" "C122"
+		(property "Reference" "C?"
 			(at 118.745 86.36 0)
 			(effects
 				(font
@@ -4651,6 +4781,14 @@
 		(pin "1"
 			(uuid "b7291d00-7ef5-41e6-807c-aaf39c1aaef7")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4661,7 +4799,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fdc1d2b")
-		(property "Reference" "C123"
+		(property "Reference" "C?"
 			(at 128.0668 93.4466 0)
 			(effects
 				(font
@@ -4712,6 +4850,14 @@
 		(pin "1"
 			(uuid "49354d7e-0cb9-418b-a620-4e48fcffd41e")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "hermeslite:C_Small")
@@ -4722,7 +4868,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fdc2e03")
-		(property "Reference" "C121"
+		(property "Reference" "C?"
 			(at 111.125 92.075 0)
 			(effects
 				(font
@@ -4772,6 +4918,14 @@
 		)
 		(pin "2"
 			(uuid "0f9b8f0d-d765-4145-93bc-dbb71d60e321")
+		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7575,7 +7729,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000601a5a3c")
-		(property "Reference" "#FLG0101"
+		(property "Reference" "#FLG?"
 			(at 126.365 60.325 0)
 			(effects
 				(font
@@ -7622,6 +7776,14 @@
 		(pin "1"
 			(uuid "bc64e002-910c-4a0f-b15a-20aba783841f")
 		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "#FLG?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -7632,7 +7794,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000601c853e")
-		(property "Reference" "#FLG0102"
+		(property "Reference" "#FLG?"
 			(at 212.09 71.755 0)
 			(effects
 				(font
@@ -7678,6 +7840,14 @@
 		)
 		(pin "1"
 			(uuid "c2f68252-534f-418b-b1c3-bbedb08ce778")
+		)
+		(instances
+			(project "radioberry-preamp"
+				(path "/6d412791-b44e-4843-85b0-670d5f76b1b8/00000000-0000-0000-0000-00005fd3ddb9"
+					(reference "#FLG?")
+					(unit 1)
+				)
+			)
 		)
 	)
 )

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "6d412791-b44e-4843-85b0-670d5f76b1b8")
 	(paper "A4")
 	(title_block
@@ -90,7 +90,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -107,11 +108,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "hermeslite:TEST_1P"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -200,7 +206,19 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Design based on work by Steve Haynal KF7O and Claudio IN3OTD"
+		(exclude_from_sim no)
+		(at 21.59 189.865 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e5c5642-13ec-4904-9a41-801c1e469b42")
 	)
 	(junction
 		(at 85.09 147.955)
@@ -335,17 +353,6 @@
 			(type default)
 		)
 		(uuid "f16a32d6-4dfd-4d4b-adad-4531485f44e8")
-	)
-	(text "Design based on work by Steve Haynal KF7O and Claudio IN3OTD"
-		(exclude_from_sim no)
-		(at 21.59 189.865 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5e5c5642-13ec-4904-9a41-801c1e469b42")
 	)
 	(symbol
 		(lib_id "hermeslite:TEST_1P")
@@ -840,6 +847,10 @@
 	(sheet
 		(at 138.43 38.735)
 		(size 59.69 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -878,6 +889,10 @@
 	(sheet
 		(at 93.345 85.725)
 		(size 66.675 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -916,6 +931,10 @@
 	(sheet
 		(at 43.815 39.37)
 		(size 59.69 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -956,4 +975,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
