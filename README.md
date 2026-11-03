@@ -16,6 +16,3 @@ Whats inside?
 
 ![CaseFront](/pics/front_draft.png)
 ![CaseFront](/pics/console.png)
-
-
-[Power Latcher by OE9SAU](https://github.com/OE9SAU/SAUBerry9/tree/main/pwr_latcher)
