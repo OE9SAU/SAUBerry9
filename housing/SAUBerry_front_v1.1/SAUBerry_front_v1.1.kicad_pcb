@@ -300,6 +300,64 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "20c2c382-c469-4d52-914b-740cc05b8fc4")
+		(at 334.63 174.93)
+		(property "Reference" ""
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "fe7f4eb5-dbb1-4da0-80c6-2ff47cbf286e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "c331273a-69c5-4074-a7b8-b1b55a22da8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2b86ba9-91a7-44dc-879b-6ff8c6420e3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5f6f673-f0ad-43d5-b89f-8b59f42cbba6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" smd circle
+			(at 0 0)
+			(size 8 8)
+			(layers "B.Paste")
+			(uuid "9cb54708-1cb4-4639-ab02-1bf319f79a2f")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "LOGO"
 		(layer "F.Cu")
 		(uuid "21c2b9e7-5c85-494e-9418-3052171fdfb0")
@@ -712,6 +770,64 @@
 			(drill 4.5)
 			(layers "*.Cu" "*.Mask")
 			(uuid "ec40fa5a-85a3-4221-ba1e-ca18a522f748")
+		)
+		(embedded_fonts no)
+	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "75de1d09-b3fa-4b39-8176-fa247b401a10")
+		(at 333.05 129.92)
+		(property "Reference" ""
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "f4108d76-34f0-464d-a216-5b024b185bab")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5fd9a0a2-f5b0-4c33-a127-360d15148d73")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f84c3154-9b8c-46a6-baeb-e665e374e305")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7921aaf-009d-4eaa-87bc-bb1993eeb0b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" smd circle
+			(at 0 0)
+			(size 8 8)
+			(layers "B.Paste")
+			(uuid "d9bbf414-63cd-47c0-84a1-58d3b6ae6425")
 		)
 		(embedded_fonts no)
 	)
@@ -12167,6 +12283,26 @@
 				(bold yes)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text_box "LöTPUKTE PANEL und ENCODER platzieren !!"
+		(start 175.58 152.36)
+		(end 309.32 200.39)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "B.Cu")
+		(uuid "5ebc7131-0c6e-4d12-a994-3deed4036767")
+		(effects
+			(font
+				(size 5 5)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(border yes)
+		(stroke
+			(width 0.2)
+			(type solid)
 		)
 	)
 	(segment
