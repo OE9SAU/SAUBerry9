@@ -1,4 +1,13 @@
-# Radioberry beta V3 - Filters Interface companion module.
+# Modifications by OE9SAU (11/26)
+Running only with filters-interface_v2.ino or higher
+
+This version contains mods to 
+- interface my own SDR-PreAmp-Filter
+- Front panel switch network for different use
+
+
+## Radioberry beta V3 - Filters Interface companion module
+Running with filters-interface_v1.ino
 
 Radioberry project
 https://github.com/pa3gsb/Radioberry-2.x
