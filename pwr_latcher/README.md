@@ -1,6 +1,7 @@
 # Power-Latcher für Raspberry Pi 4 / Radioberry
 
 Der Taster löst einen sauberen Shutdown aus. Danach signalisiert GPIO15 der Un-Latch-Schaltung, die Versorgung verzögert abzuschalten. Ein eigenes Shutdown-Skript ist nicht erforderlich.
+
 **Ablauf:** Taster loslassen → sauberer Shutdown → GPIO15 HIGH → RC-Verzögerung → Versorgung aus.
 
 ## Anschlüsse
