@@ -11,3 +11,29 @@ gpio=15=op,dl
 
 # Poweroff-Signal → Un-Latch (GPIO15, Pin 10, aktiv HIGH)
 dtoverlay=gpio-poweroff,gpiopin=15
+
+
+********************************************************************************************************
+Bei PowerOff kommt Dialog? Wenn es via labwc läuft, dann diesen ausschalten mit diesem Scrip
+
+cp ~/.config/labwc/rc.xml ~/.config/labwc/rc.xml.bak
+
+python3 - <<'PY'
+from pathlib import Path
+
+p = Path.home() / ".config/labwc/rc.xml"
+text = p.read_text()
+if "XF86PowerOff" not in text:
+    entry = '''
+<keybind key="XF86PowerOff" onRelease="yes">
+  <action name="Execute">
+    <command>systemctl poweroff</command>
+  </action>
+</keybind>
+'''
+    text = text.replace("</keyboard>", entry + "</keyboard>", 1)
+    p.write_text(text)
+    print("Power-Taste für direkten Shutdown eingetragen.")
+else:
+    print("XF86PowerOff ist bereits vorhanden; nichts geändert.")
+PY
