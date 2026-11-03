@@ -1,4 +1,11 @@
-# Radioberry beta V3 - Filters Interface companion module.
+## Ardu-Code modifications by OE9SAU (11/26) – v2.0 in progress
+* This version contains mods to 
+- interface my own SDR-PreAmp-Filter
+- Front panel switch network for different use
+
+
+# Radioberry beta V3 - Filters Interface companion module
+Running with ArduCode v1
 
 Radioberry project
 https://github.com/pa3gsb/Radioberry-2.x
