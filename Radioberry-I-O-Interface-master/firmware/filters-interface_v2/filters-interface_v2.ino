@@ -18,22 +18,26 @@ const int FILTER_20m = 101;
 const int FILTER_17m = 164;
 const int FILTER_15m = 264;
 const int FILTER_12m = 232;
-const int FILTER_10m = 232;
-const int FILTER_6m = 232;
+const int FILTER_10m = 232; // gleiches Kommando wie 12m
+const int FILTER_6m = 232;  // gleiches Kommando wie 12m; NICHT unterscheidbar
 int currentCW = 0;
 boolean genericMode = false;
 
 #define debug
 
 //Pin definitions
-#define lpf_board_xf-lpf-hf
-//https://www.ebay.ca/itm/12v-100W-3-5Mhz-30Mhz-HF-power-amplifier-low-pass-filter-Diy-kit/113761898910?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649
-#if defined lpf_board_xf-lpf-hf
-int lpf_15_10m = 5;
-int lpf_20_17m = 4;
-int lpf_40m = 3;
-int lpf_80m = 2;
-#endif
+// Neues SDR Pre-Amp Filterboard (74CBT3251)
+// D2=S0, D3=S1, D4=S2, D5=Reserve
+const uint8_t filter_s0 = 2;
+const uint8_t filter_s1 = 3;
+const uint8_t filter_s2 = 4;
+
+// Kanal 0..4 = Filter; Kanal 7 = GND (Fallback)
+void selectSDRFilter(uint8_t channel) {
+  digitalWrite(filter_s0, (channel & 0x01) ? HIGH : LOW);
+  digitalWrite(filter_s1, (channel & 0x02) ? HIGH : LOW);
+  digitalWrite(filter_s2, (channel & 0x04) ? HIGH : LOW);
+}
 
 #define bpf_board_russian
 //https://www.ebay.ca/itm/HF-BPF-band-pass-filter-RTL-SDR-HERMES-ODYSSEY-HiQSDR-Red-Pitaya-transceiver/332074659425?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649
@@ -58,22 +62,19 @@ int ptt_pin = 8;
 int tx_pin = 7;
 int pa_pin = 6;
 
-int currentBand = 0;
+int currentBand = -1;
 boolean transmit = 0;
 boolean transmitAllowed = true;
 
 void setup() {
 
-#if defined lpf_board_xf-lpf-hf
-  pinMode(lpf_15_10m, OUTPUT);
-  pinMode(lpf_20_17m, OUTPUT);
-  pinMode(lpf_40m, OUTPUT);
-  pinMode(lpf_80m, OUTPUT);
-  digitalWrite(lpf_15_10m, LOW);
-  digitalWrite(lpf_20_17m, LOW);
-  digitalWrite(lpf_40m, LOW);
-  digitalWrite(lpf_80m, LOW);
-#endif
+  // Erst GND-Kanal wählen, dann Pins als Ausgänge aktivieren.
+  digitalWrite(filter_s0, HIGH);
+  digitalWrite(filter_s1, HIGH);
+  digitalWrite(filter_s2, HIGH);
+  pinMode(filter_s0, OUTPUT);
+  pinMode(filter_s1, OUTPUT);
+  pinMode(filter_s2, OUTPUT);
 
 #if defined bpf_board_russian
   pinMode(bpf_pin1, OUTPUT);
@@ -238,7 +239,7 @@ void processPTT(int command) {
   digitalWrite(tx_pin, command);
   digitalWrite(pa_pin, command);
 }
-void processFrequency(int command) {
+void processFrequency(int *command) {
 
 }
 void processCommand(int command) {
@@ -253,13 +254,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, LOW);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        //Not supported
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(4); // 74CBT3251
+
         break;
       case FILTER_80m:
 #if defined bpf_board_russian
@@ -268,12 +264,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, LOW);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, HIGH);
-#endif
+        selectSDRFilter(3); // 74CBT3251
+
         break;
       case FILTER_60m:
 #if defined bpf_board_russian
@@ -283,13 +275,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, LOW);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        //Not supported
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(2); // 74CBT3251
+
         break;
       case FILTER_40m:
 #if defined bpf_board_russian
@@ -298,12 +285,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, LOW);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, HIGH);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(2); // 74CBT3251
+
         break;
       case FILTER_30m:
 #if defined bpf_board_russian
@@ -312,13 +295,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, HIGH);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        //Not supported
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(1); // 74CBT3251
+
         break;
       case FILTER_20m:
 #if defined bpf_board_russian
@@ -327,12 +305,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, HIGH);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, HIGH);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(1); // 74CBT3251
+
         break;
       case FILTER_17m:
 #if defined bpf_board_russian
@@ -341,12 +315,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, HIGH);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, HIGH);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(0); // 74CBT3251
+
         break;
       case FILTER_15m:
 #if defined bpf_board_russian
@@ -355,12 +325,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, HIGH);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        digitalWrite(lpf_15_10m, HIGH);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(0); // 74CBT3251
+
         break;
       case FILTER_12m:
 #if defined bpf_board_russian
@@ -369,41 +335,10 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, LOW);
         digitalWrite(bpf_pin4, HIGH);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        digitalWrite(lpf_15_10m, HIGH);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, LOW);
-#endif
+        selectSDRFilter(0); // 74CBT3251
+
         break;
-      //                case FILTER_10m:
-      //                        #if defined bpf_board_russian
-      //                        digitalWrite(bpf_pin1, HIGH);
-      //                        digitalWrite(bpf_pin2, LOW);
-      //                        digitalWrite(bpf_pin3, LOW);
-      //                        digitalWrite(bpf_pin4, HIGH);
-      //                        #endif
-      //                        #if defined lpf_board_xf-lpf-hf
-      //                        digitalWrite(lpf_15_10m, HIGH);
-      //                        digitalWrite(lpf_20_17m, LOW);
-      //                        digitalWrite(lpf_40m, LOW);
-      //                        digitalWrite(lpf_80m, LOW);
-      //                        #endif
-      //                        break;
-      //                case FILTER_6m:
-      //                        #if defined bpf_board_russian
-      //                        digitalWrite(bpf_pin1, LOW);
-      //                        digitalWrite(bpf_pin2, LOW);
-      //                        digitalWrite(bpf_pin3, LOW);
-      //                        digitalWrite(bpf_pin4, LOW);
-      //                        #endif
-      //                        #if defined lpf_board_xf-lpf-hf
-      //                        digitalWrite(lpf_15_10m, LOW);
-      //                        digitalWrite(lpf_20_17m, LOW);
-      //                        digitalWrite(lpf_40m, LOW);
-      //                        digitalWrite(lpf_80m, LOW);
-      //                        #endif
-      //                        break;
+      // 10m/6m share command 232 with 12m. 6m unsupported.
       default:
         //TODO Disable TX
         //Wire.write(0);
@@ -413,12 +348,8 @@ void processCommand(int command) {
         digitalWrite(bpf_pin3, LOW);
         digitalWrite(bpf_pin4, LOW);
 #endif
-#if defined lpf_board_xf-lpf-hf
-        digitalWrite(lpf_15_10m, LOW);
-        digitalWrite(lpf_20_17m, LOW);
-        digitalWrite(lpf_40m, LOW);
-        digitalWrite(lpf_80m, HIGH);
-#endif
+        selectSDRFilter(7); // 74CBT3251
+
         break;
     }
   }
