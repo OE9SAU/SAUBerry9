@@ -16556,6 +16556,46 @@
 		)
 		(uuid "f3524593-2dfa-4ec0-aec2-4dcb80b7c90d")
 	)
+	(text_box "MAX11613\nI2C ADDR 0x34\n"
+		(exclude_from_sim no)
+		(at 163.576 107.696 0)
+		(size 21.59 6.858)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "2978f149-b85b-48c3-8921-710633e9d08d")
+	)
+	(text_box "INA199A1DC\nStrom	Ausgangsspannung\n1 A		0,5 V\n2 A		1,0 V\n5 A		2,5 V"
+		(exclude_from_sim no)
+		(at 230.886 107.188 0)
+		(size 36.322 13.462)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "5438e75e-016a-4f68-91d3-073fdf776e11")
+	)
 	(junction
 		(at 139.192 95.758)
 		(diameter 0)
