@@ -1,12 +1,12 @@
-
 #include <Wire.h>
 #include <math.h>
 
 #define ADC_ADDR 0x34
 #define VREF 5.0f
 
-#define SHUNT 0.04f
-#define GAIN 50.0f
+#define SHUNT 0.04f           // Shunt-Widerstand 0,04 Ohm
+#define GAIN 50.0f            // INA199A1: 50-fache Verstärkung
+#define CURRENT_CAL 1.25f     // Kalibrierfaktor
 
 // Vorlaeufige HF-Kalibrierung
 #define FWD_CAL 1.0f
@@ -81,17 +81,19 @@ void loop() {
       rawFWD == 0xFFFF) {
 
     Serial.println("I2C Lesefehler!");
-    delay(500);
+    delay(3000);
     return;
   }
 
   float rev  = adcVoltage(rawREV);
   float temp = adcVoltage(rawTEMP);
+  // MCP9700: 500 mV bei 0 C, 10 mV pro C
+  float temperature = (temp - 0.500f) * 100.0f;
   float ipa  = adcVoltage(rawIPA);
   float fwd  = adcVoltage(rawFWD);
 
   // PA-Strom
-  float current = ipa / (SHUNT * GAIN);
+  float current = (ipa / (SHUNT * GAIN)) * CURRENT_CAL;
 
   // Relative HF-Leistung (noch nicht Watt)
   float pfwd = fwd * fwd * FWD_CAL;
@@ -126,7 +128,9 @@ void loop() {
   Serial.print(rawTEMP);
   Serial.print("  ");
   Serial.print(temp, 3);
-  Serial.println(" V");
+  Serial.print(" V  |  ");
+  Serial.print(temperature, 1);
+  Serial.println(" °C");
 
   Serial.print("IPA  AIN2: ");
   Serial.print(rawIPA);
@@ -158,5 +162,5 @@ void loop() {
   Serial.print("P-REV relativ: ");
   Serial.println(prev, 3);
 
-  delay(500);
+  delay(3000);
 }
