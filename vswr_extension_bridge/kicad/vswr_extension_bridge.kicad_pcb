@@ -5924,7 +5924,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "470R"
 			(at 0 1.65 180)
 			(layer "F.Fab")
 			(uuid "c00769c3-486d-4c09-97ba-c2d324b42609")
@@ -6149,7 +6149,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "470R"
 			(at 0 1.65 180)
 			(layer "F.Fab")
 			(uuid "bd2a244b-416d-417a-b6b5-ede8acd1aa11")
@@ -9932,7 +9932,7 @@
 				)
 			)
 		)
-		(property "Value" "JNC"
+		(property "Value" "0R"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(uuid "37c4dc09-f0ab-45db-a6d3-bcc339227932")
@@ -10492,13 +10492,14 @@
 		(descr "SMALL OUTLINE TRANSISTOR 223")
 		(tags "SMALL OUTLINE TRANSISTOR 223")
 		(property "Reference" "IC1"
-			(at 0.635 -0.6858 270)
+			(at -2.82085 -3.1954 0)
 			(layer "F.SilkS")
 			(uuid "ff2d71e4-6b6b-4d85-8270-7bec04d7f87a")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.1016)
+					(size 0.8 0.8)
+					(thickness 0.15)
+					(bold yes)
 				)
 			)
 		)
@@ -10972,39 +10973,6 @@
 			)
 			(layer "Dwgs.User")
 			(uuid "5b1ecab9-e1bd-430f-a957-bd8c305e7544")
-		)
-		(fp_text user "direction of pcb"
-			(at 2.43078 -0.52578 270)
-			(layer "Dwgs.User")
-			(uuid "197f99f2-0a7a-436d-bb77-43c68734a848")
-			(effects
-				(font
-					(size 0.254 0.254)
-					(thickness 0.0254)
-				)
-			)
-		)
-		(fp_text user "wavesoldering"
-			(at 2.04978 0.37084 270)
-			(layer "Dwgs.User")
-			(uuid "acab061f-3ded-44a6-b7fc-6a6038903c52")
-			(effects
-				(font
-					(size 0.254 0.254)
-					(thickness 0.0254)
-				)
-			)
-		)
-		(fp_text user "transportation for"
-			(at 2.68478 -0.0762 270)
-			(layer "Dwgs.User")
-			(uuid "fd2b03dd-dc64-48c4-a268-1b6d1ed69c3b")
-			(effects
-				(font
-					(size 0.254 0.254)
-					(thickness 0.0254)
-				)
-			)
 		)
 		(pad "1" smd rect
 			(at -2.2987 3.1496 270)
