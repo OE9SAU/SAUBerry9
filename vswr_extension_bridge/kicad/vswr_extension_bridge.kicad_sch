@@ -16545,9 +16545,9 @@
 		)
 		(uuid "f28649c0-7862-487b-9a17-973f0c707c89")
 	)
-	(text "20T #22"
+	(text "20T/0.4mm²"
 		(exclude_from_sim no)
-		(at 47.752 83.058 0)
+		(at 42.926 83.058 0)
 		(effects
 			(font
 				(size 1.524 1.524)

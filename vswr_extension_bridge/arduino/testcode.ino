@@ -9,14 +9,14 @@
 #define CURRENT_CAL 1.25f     // Kalibrierfaktor
 
 // Vorlaeufige HF-Kalibrierung
-#define FWD_CAL 1.0f
-#define REV_CAL 1.0f
+#define FWD_CAL 11.14f
+#define REV_CAL 14.30f
 
 // ADC-Kanaele
-#define CH_REV  0
+#define CH_FWD 0    // AIN0 = Vorlaufleistung
 #define CH_TEMP 1
 #define CH_IPA  2
-#define CH_FWD  3
+#define CH_REV 3    // AIN3 = Rücklaufleistung
 
 // MAX11612 Setup:
 // VDD-Referenz, interne Clock, unipolar
