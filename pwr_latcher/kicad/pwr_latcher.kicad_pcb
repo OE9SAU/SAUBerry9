@@ -3060,7 +3060,7 @@
 				)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "3x22uF"
 			(at 0 3.03 0)
 			(layer "F.Fab")
 			(uuid "bc297c2c-2f3d-4da5-aa97-0006a031402a")
