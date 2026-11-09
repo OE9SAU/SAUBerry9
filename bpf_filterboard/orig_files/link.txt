@@ -1,0 +1,5 @@
+https://pu2clr.github.io/auto_bpf_arduino/
+
+https://github.com/pu2clr/auto_bpf_arduino/tree/master
+
+https://github.com/JimReagans/Si4735-radio-PCB-s-and-bandpass-filter
