@@ -4,9 +4,9 @@
 #define ADC_ADDR 0x34
 #define VREF 5.0f
 
-#define SHUNT 0.04f           // Shunt-Widerstand 0,04 Ohm
-#define GAIN 50.0f            // INA199A1: 50-fache Verstärkung
-#define CURRENT_CAL 1.25f     // Kalibrierfaktor
+#define SHUNT 0.002f           // Shunt-Widerstand 0,002 Ohm
+#define GAIN 50.0f             // INA199A1: 50-fache Verstärkung
+#define CURRENT_CAL 1.0744f    // Kalibrierfaktor
 
 // Vorlaeufige HF-Kalibrierung
 #define FWD_CAL 11.14f

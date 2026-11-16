@@ -161,7 +161,7 @@
 	(footprint "LOGO"
 		(layer "F.Cu")
 		(uuid "0fa23f60-56d7-45d3-ace9-6fe64d9bf88f")
-		(at 172.228 233.1412)
+		(at 172.228 232.9)
 		(property "Reference" "G0"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -86616,7 +86616,7 @@
 		)
 	)
 	(gr_text "TUNE"
-		(at 184.1 234.3912 0)
+		(at 184.1 234.2 0)
 		(layer "F.SilkS")
 		(uuid "37a67ec0-e546-45d6-bfe8-4c767b0c2189")
 		(effects
@@ -86628,8 +86628,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "ANT 1/2\n"
-		(at 195.5 234.23 0)
+	(gr_text "ANT2"
+		(at 197.8 234.2 0)
 		(layer "F.SilkS")
 		(uuid "3a2f9c1e-df39-45ce-860e-7b24eb66b3ac")
 		(effects
